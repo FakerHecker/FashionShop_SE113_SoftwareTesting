@@ -10,6 +10,7 @@ import errorsMiddleware from "./middlewares/errors.js"; // Import middleware x�
 
 import path from "path"; // Import thư viện path để xử lý đường dẫn
 import { fileURLToPath } from "url"; // Import hàm fileURLToPath từ thư viện url
+import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url); // Lấy đường dẫn tệp hiện tại
 const __dirname = path.dirname(__filename); // Lấy đường dẫn thư mục hiện tại
 

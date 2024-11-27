@@ -3,7 +3,7 @@ import express from "express";
 import passport from "passport";
 import sendToken  from '../utils/sendToken.js';
 import {
-  resetPassword, 
+resetPassword, 
   forgotPassword, 
   logout, 
   loginUser, 
