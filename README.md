@@ -107,14 +107,5 @@ Project được cài cài đặt tại `D:/FashionShop`:
 5. Biến trong JavaScript dùng let thay vì dùng var
 6. Dùng " " thay vì dùng ' '
 
-**Lưu ý: tuân thủ các yêu cầu/ mong đợi của thầy về tiêu chí format.**
+**Lưu ý: tuân thủ các yêu cầu/ mong đợi về tiêu chí format.**
 
-## THÀNH VIÊN NHÓM
-
-<a name="thanhvien"></a>
-| STT    | MSSV          | Họ và Tên              | Github                                               | Email                   |
-| ------ |:-------------:| ----------------------:|-----------------------------------------------------:|-------------------------:
-| 1      | 22540008      | Trần Quang Hùng        |[ricardotran92](https://github.com/ricardotran92)     |<22540008@gm.uit.edu.vn>   |
-| 2      | 22540001      | Nguyễn Ngọc Ánh        |[DR12719](https://github.com/DR12719)                 |<22540001@gm.uit.edu.vn>   |
-| 3      | 22540012      | Phạm Tiến Nam          |[ALong202](https://github.com/ALong202)               |<22540012@gm.uit.edu.vn>   |
-| 4      | 22540017      | Phạm Minh Quốc         |[pmquoc-uit](https://github.com/pmquoc-uit)           |<22540017@gm.uit.edu.vn>   |
