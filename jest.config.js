@@ -1,9 +1,15 @@
-module.exports = {
+export default {
+  testEnvironment: 'node',
+  transform: {},
   moduleNameMapper: {
-    "^@/(.*)$": "<rootDir>/src/$1",
+    "^@/(.*)$": "<rootDir>/backend/$1"
   },
-  testEnvironment: "jest-environment-jsdom",
-  transform: {
-    "^.+\\.[t|j]sx?$": "babel-jest",
+  globals: {
+    jest: {
+      useESModules: true
+    }
   },
+  roots: [
+    "<rootDir>/backend"
+  ],
 };

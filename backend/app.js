@@ -138,3 +138,5 @@ process.on("unhandledRejection", (err) => {
 //   // req.file chứa thông tin về tệp đã tải lên
 //   res.send('File uploaded successfully');
 // });
+
+export default app;

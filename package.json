@@ -1,5 +1,6 @@
 {
   "name": "fashionshop",
+  "type": "module",
   "version": "1.0.0",
   "description": "FashionShop. nodemon giup auto-restart app khi co su thay doi ma nguon. $ npm start de goi node backend. $ npm run dev de goi nodemon backend",
   "main": "app.js",
@@ -10,7 +11,8 @@
     "seeder": "node backend/seeder/seeder.js",
     "prod-build": "SET NODE_ENV=PRODUCTION& node build/app.js",
     "prod-docker": "node build/app.js",
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "nodemon --exec 'npm test'"
   },
   "author": "HungNamAnhQuoc",
   "license": "ISC",

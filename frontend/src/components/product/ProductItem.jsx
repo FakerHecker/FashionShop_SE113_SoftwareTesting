@@ -44,7 +44,7 @@ const ProductItem = ({ product, columnSize, isInSlider = false }) => {
               />
               <span id="no_of_reviews" className="pt-2 ps-2"> ({product?.numOfReviews}) </span>
             </div>
-            <p className="card-text mt-2">{product?.price.toLocaleString('vi-VN')}đ</p>
+            <p className="card-text mt-2">{product?.price ? product?.price.toLocaleString('vi-VN'):1000}đ</p>
             <a href={`/product/${product?._id}`} id="view_btn" className="btn btn-block">
               Chi tiết
             </a>
