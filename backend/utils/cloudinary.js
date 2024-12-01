@@ -25,6 +25,29 @@ export const upload_file = (file, folder) => {
         folder,
       }
     );
+    // try {
+    //   cloudinary.uploader.upload(
+    //     file,
+    //     (error, result) => {
+    //       if (error) {
+    //         console.error("Error uploading to Cloudinary:", error);
+    //         reject(new Error("Failed to upload file to Cloudinary."));
+    //       } else {
+    //         resolve({
+    //           public_id: result.public_id,
+    //           url: result.url,
+    //         });
+    //       }
+    //     },
+    //     {
+    //       resource_type: "auto",
+    //       folder,
+    //     }
+    //   );
+    // } catch (err) {
+    //   console.error("Unexpected error in upload_file:", err);
+    //   reject(new Error("Unexpected error occurred while uploading file."));
+    // }
   });
 }
 

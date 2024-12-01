@@ -57,6 +57,12 @@ const UploadImages = () => {
     const files = Array.from(e.target.files);
 
     for (let file of files) {
+      // Kiểm tra MIME type
+      if (!file.type.startsWith("image/")) {
+        alert("Vui lòng chỉ chọn file hình ảnh!");
+        return;
+      }
+
       if (file.size > 1024 * 1024 * 10) {
         alert("Vui lòng chọn file dưới 10mb");
         return;
@@ -135,6 +141,7 @@ const UploadImages = () => {
                   className="form-control"
                   id="customFile"
                   multiple
+                  accept="image/*"
                   onChange={onChange}
                   onClick={handleResetFileInput}
                 />

@@ -15,7 +15,8 @@ resetPassword,
   allUsers,
   getUserDetails,
   deleteUser,
-  updateUser
+  updateUser,
+  avatar
 } from "../controllers/authControllers.js";
 import { authorizeRoles, isAuthenticatedUser } from "../middlewares/auth.js";
 const router = express.Router();
@@ -111,6 +112,8 @@ router.route("/password/update").put(isAuthenticatedUser, updatePassword);
 
 // Cập nhật thông tin hồ sơ của người dùng hiện tại
 router.route("/me/update").put(isAuthenticatedUser, updateProfile);
+
+router.route("/avatar").post(avatar);
 
 router.route("/me/upload_avatar").put(isAuthenticatedUser, uploadAvatar);
 

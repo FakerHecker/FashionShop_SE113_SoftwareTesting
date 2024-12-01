@@ -72,6 +72,7 @@ export const logout = catchAsyncErrors(async (req, res, next) => {
 
 // Upload user avatar   =>  /api/me/upload_avatar
 export const uploadAvatar = catchAsyncErrors(async (req, res, next) => {
+  console.log('hello boyyyyyyyyyyy', req)
   const avatarResponse = await upload_file(req.body.avatar, "fashionshop/avatars");
 
   // Xoá avatar cũ trên cloudinary - optional
@@ -89,6 +90,17 @@ export const uploadAvatar = catchAsyncErrors(async (req, res, next) => {
   // Trả về mã trạng thái 200
   res.status(200).json({
     user,
+  });
+});
+
+export const avatar = catchAsyncErrors(async (req, res, next) => {
+  console.log('sdfsdkjfhsdjfds', req)
+  const avatarResponse = await upload_file(req.body.avatar, "fashionshop/avatars");
+  // Trả về mã trạng thái 200
+  res.status(200).json({
+    message: 'uploaded',
+    public_id: avatarResponse.public_id,
+    url: avatarResponse.url
   });
 });
 

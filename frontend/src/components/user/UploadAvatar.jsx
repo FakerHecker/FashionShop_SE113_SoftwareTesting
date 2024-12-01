@@ -51,6 +51,11 @@ const UploadAvatar = () => {
 
   const onChange = (e) => {
     const file = e.target.files[0];
+
+    if (!file.type.startsWith("image/")) {
+      alert("Vui lòng chỉ chọn hình ảnh!");
+      return;
+    }
     
     // Kiểm tra kích thuong file (<= 10mb, giới hạn của cloudinary)
     if (file.size > 1024 * 1024 * 10) {
