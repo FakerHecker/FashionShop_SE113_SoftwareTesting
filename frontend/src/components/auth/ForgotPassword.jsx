@@ -9,10 +9,10 @@ const ForgotPassword = () => {
 
   const navigate = useNavigate();
 
-  const [forgotPassword, { isLoading, error, isSuccess }] = useForgotPasswordMutation();
+  const [forgotPassword, { isLoading, error, isSuccess, data }] = useForgotPasswordMutation();
 
   const { isAuthenticated } = useSelector((state) => state.auth);
-  
+
   // console.log("=====================================");
   // console.log(data);
   // console.log("=====================================");
@@ -25,6 +25,8 @@ const ForgotPassword = () => {
       toast.error(error?.data?.message);
     }
     if (isSuccess) {
+      // console.log('aaaaaaaaaa',data)
+      navigate(`/password/reset/${data?.token}`)
       toast.success("Email đã được gửi. Vui lòng kiểm tra hộp thư của bạn.");
     }
   }, [error, isAuthenticated, isSuccess])
@@ -32,7 +34,7 @@ const ForgotPassword = () => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    forgotPassword({ email });
+    forgotPassword({ email })
   };
 
   return (

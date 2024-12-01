@@ -129,6 +129,7 @@ export const forgotPassword = catchAsyncErrors(async (req, res, next) => {
     // Trả về mã trạng thái 200 và thông báo email đã được gửi thành công
     res.status(200).json({
       message: `Gửi email tới: ${user.email}`,
+      token: resetToken
     });
   } catch (error) {
     // Nếu có lỗi khi gửi email, xóa thông tin mã token và hết hạn của người dùng và trả về lỗi
