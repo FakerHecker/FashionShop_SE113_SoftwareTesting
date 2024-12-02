@@ -652,7 +652,7 @@ const ProcessOrder = () => {
                     </MDBCol>
                   </MDBRow>
 
-                  <hr className="my-4" />
+                  {/* <hr className="my-4" />
                   <MDBInput
                     placeholder="NON VOUCHER"
                     wrapperClass="flex-fill"
@@ -661,7 +661,7 @@ const ProcessOrder = () => {
                       borderRadius: "4px",
                     }}
                     disabled={true}
-                  />
+                  /> */}
                   <hr className="my-4" />
                   <MDBRow className="justify-content-between align-items-center mb-4">
                     <MDBCol>

@@ -131,6 +131,17 @@ const MyOrder = () => {
       filter: true,
       resizable: true,
       cellClass: "grid-cell-centered",
+      valueFormatter: (params) => {
+        // Định dạng số tiền hiển thị
+        return new Intl.NumberFormat("vi-VN", {
+          style: "currency",
+          currency: "VND",
+        }).format(params.value);
+      },
+      comparator: (valueA, valueB) => {
+        // Sắp xếp số tăng dần
+        return valueA - valueB;
+      },
     },
     {
       headerName: "Thời gian đặt hàng",
@@ -139,6 +150,25 @@ const MyOrder = () => {
       filter: true,
       resizable: true,
       cellClass: "grid-cell-centered",
+      comparator: (valueA, valueB) => {
+        // Chuyển chuỗi ISO 8601 thành đối tượng Date để so sánh
+        const dateA = new Date(valueA);
+        const dateB = new Date(valueB);
+        return dateA - dateB; // Sắp xếp tăng dần
+      },
+      valueFormatter: (params) => {
+        // Định dạng ngày giờ hiển thị theo mong muốn
+        const date = new Date(params.value);
+        return date.toLocaleString("vi-VN", {
+          day: "2-digit",
+          month: "2-digit",
+          year: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit", // Nếu cần hiển thị giây
+          timeZone: "UTC", // Xử lý đúng múi giờ
+        });
+      },
     },
     {
       headerName: "Tình trạng thanh toán",
@@ -224,11 +254,13 @@ const MyOrder = () => {
   const rowData = data?.orders?.map((order) => ({
     _id: order?._id,
     id: order?.shippingInfo?.orderID.toUpperCase(),
-    amount: order?.totalAmount.toLocaleString("vi-VN", {
-      style: "currency",
-      currency: "VND",
-    }),
-    orderdate: new Date(order?.createdAt).toLocaleString("vi-VN"),
+    // amount: order?.totalAmount.toLocaleString("vi-VN", {
+    //   style: "currency",
+    //   currency: "VND",
+    // }),
+    amount: order?.totalAmount,
+    // orderdate: new Date(order?.createdAt).toLocaleString("vi-VN"),
+    orderdate: order?.createdAt,
     paymentStatus: order?.paymentInfo?.status.toUpperCase(),
     orderStatus: order?.orderStatus.toUpperCase(),
   }));

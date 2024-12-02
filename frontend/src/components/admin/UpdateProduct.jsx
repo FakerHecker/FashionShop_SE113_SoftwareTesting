@@ -132,12 +132,91 @@ const UpdateProduct = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    // if (!product.origin) {
+    //   toast.error(
+    //     "Vui lòng nhập nguồn gốc sản phẩm"
+    //   );
+    //   return;
+    // }
+    // if (!product.variants.length) {
+    //   toast.error(
+    //     "Vui lòng nhập ít nhất 1 loại lưu kho"
+    //   );
+    //   return;
+    // }
     if (hasDuplicateVariants(product.variants)) {
       toast.error(
         "Có lỗi: Trùng lặp các cặp màu sắc và kích cỡ. Vui lòng kiểm tra lại."
       );
       return;
     } // Kiểm tra trùng biến thể (màu và kích cỡ)
+
+      // Kiểm tra các trường thông tin
+    const validateProduct = () => {
+      if (!product.productID || product.productID.trim() === "") {
+        return "Mã sản phẩm không được để trống.";
+      }
+      if (!product.name || product.name.trim() === "") {
+        return "Tên sản phẩm không được để trống.";
+      }
+      if (!product.description || product.description.trim() === "") {
+        return "Mô tả sản phẩm không được để trống.";
+      }
+      if (!product.origin || product.origin.trim() === "") {
+        return "Xuất xứ sản phẩm không được để trống.";
+      }
+      if (
+        !product.price ||
+        isNaN(product.price) ||
+        parseFloat(product.price) <= 0
+      ) {
+        return "Giá sản phẩm phải là một số hợp lệ và lớn hơn 0.";
+      }
+      if (
+        !product.category ||
+        !product.category.name ||
+        product.category.name.trim() === ""
+      ) {
+        return "Danh mục sản phẩm không được để trống.";
+      }
+      if (
+        !product.category.subCategory ||
+        product.category.subCategory.trim() === "" ||
+        product.category.subCategory === "Vui lòng chọn"
+      ) {
+        return "Danh mục phụ không được để trống và không được chọn 'Vui lòng chọn'.";
+      }
+      if (
+        !product.category.subSubCategory ||
+        product.category.subSubCategory.trim() === "" ||
+        product.category.subSubCategory === "Vui lòng chọn"
+      ) {
+        return "Danh mục con không được để trống và không được chọn 'Vui lòng chọn'.";
+      }
+      if (
+        !product.variants ||
+        product.variants.length === 0 ||
+        product.variants.some(
+          (variant) =>
+            !variant.color ||
+            !variant.size ||
+            !variant.stock ||
+            isNaN(variant.stock) ||
+            parseInt(variant.stock) < 0
+        )
+      ) {
+        return "Danh sách biến thể phải có ít nhất một mục hợp lệ (đủ màu, kích cỡ và số lượng tồn kho).";
+      }
+      return null;
+    };
+
+  const errorMessage = validateProduct();
+  if (errorMessage) {
+    toast.error(errorMessage);
+    return;
+  }
+
+
     console.log("param?.id", params?.id);
     console.log(product);
     updateProduct({ id: params?.id, body: product });

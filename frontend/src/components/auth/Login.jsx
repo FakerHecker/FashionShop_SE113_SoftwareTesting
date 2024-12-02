@@ -110,7 +110,7 @@ const Login = () => {
           </div>
         </form>
 
-        <div className="shadow rounded bg-body login-wrapper">
+        {/* <div className="shadow rounded bg-body login-wrapper">
           <p className="text-left">Hoặc đăng nhập bằng:</p>
           <div className="button-container">
             <button className="loginButton google" onClick={handleGoogleLogin}>
@@ -122,7 +122,7 @@ const Login = () => {
               Facebook
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

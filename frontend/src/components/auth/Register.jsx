@@ -74,6 +74,43 @@ const Register = () => {
   // xử lý sự kiện submit của form. Sau đó hàm login được gọi với dữ liệu đăng nhập
   const submitHandler = (e) => {
     e.preventDefault();
+    const signUpData = { ...user };
+    const errors = [];
+
+    // Kiểm tra từng trường
+    if (!user.name) {
+      errors.push("Họ tên không được để trống");
+    }
+    if (!user.email) {
+      errors.push("Email không được để trống");
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(user.email)) {
+      errors.push("Email không đúng định dạng (vd: example@domain.com)");
+    }
+    if (!user.password) {
+      errors.push("Mật khẩu không được để trống");
+    }
+    if (!confirmPassword) {
+      errors.push("Xác nhận mật khẩu không được để trống");
+    }
+    if (user.password !== confirmPassword) {
+      errors.push("Mật khẩu và xác nhận mật khẩu không khớp");
+    }
+    if (!user.phone) {
+      errors.push("Số điện thoại không được để trống");
+    } else if (!/^\+84\d{9}$/.test(user.phone)) {
+      errors.push("Số điện thoại phải có định dạng +84 và 9 số đằng sau");
+    }
+    if (!user.address) {
+      errors.push("Địa chỉ không được để trống");
+    }
+
+    // Nếu có lỗi, hiển thị tất cả qua toast
+    if (errors.length > 0) {
+      errors.forEach((error) => toast.error(error));
+      return;
+    }
+    console.log(signUpData)
+    return
     if(validateForm()){
       const signUpData = { ...user };
       register(signUpData);

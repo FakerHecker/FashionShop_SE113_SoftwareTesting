@@ -126,6 +126,71 @@ const NewProduct = () => {
       );
       return;
     } // Kiểm tra trùng biến thể (màu và kích cỡ)
+
+    const validateProduct = () => {
+      if (!product.productID || product.productID.trim() === "") {
+        return "Mã sản phẩm không được để trống.";
+      }
+      if (!product.name || product.name.trim() === "") {
+        return "Tên sản phẩm không được để trống.";
+      }
+      if (!product.description || product.description.trim() === "") {
+        return "Mô tả sản phẩm không được để trống.";
+      }
+      if (!product.origin || product.origin.trim() === "") {
+        return "Xuất xứ sản phẩm không được để trống.";
+      }
+      if (
+        !product.price ||
+        isNaN(product.price) ||
+        parseFloat(product.price) <= 0
+      ) {
+        return "Giá sản phẩm phải là một số hợp lệ và lớn hơn 0.";
+      }
+      if (
+        !product.category ||
+        !product.category.name ||
+        product.category.name.trim() === ""
+      ) {
+        return "Danh mục sản phẩm không được để trống.";
+      }
+      if (
+        !product.category.subCategory ||
+        product.category.subCategory.trim() === "" ||
+        product.category.subCategory === "Vui lòng chọn"
+      ) {
+        return "Danh mục phụ không được để trống và không được chọn 'Vui lòng chọn'.";
+      }
+      if (
+        !product.category.subSubCategory ||
+        product.category.subSubCategory.trim() === "" ||
+        product.category.subSubCategory === "Vui lòng chọn"
+      ) {
+        return "Danh mục con không được để trống và không được chọn 'Vui lòng chọn'.";
+      }
+      if (
+        !product.variants ||
+        product.variants.length === 0 ||
+        product.variants.some(
+          (variant) =>
+            !variant.color ||
+            !variant.size ||
+            !variant.stock ||
+            isNaN(variant.stock) ||
+            parseInt(variant.stock) < 0
+        )
+      ) {
+        return "Danh sách biến thể phải có ít nhất một mục hợp lệ (đủ màu, kích cỡ và số lượng tồn kho).";
+      }
+      return null;
+    };
+
+  const errorMessage = validateProduct();
+  if (errorMessage) {
+    toast.error(errorMessage);
+    return;
+  }
+  
     console.log(product);
     setTempProductID(product.productID);
     createProduct(product);

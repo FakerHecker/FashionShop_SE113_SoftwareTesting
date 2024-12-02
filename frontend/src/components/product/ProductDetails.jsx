@@ -338,7 +338,7 @@ const ProductDetails = () => {
           </div>
         )}
       </div> */}
-      <ListReviews reviews={product?.reviews} />
+      {/* <ListReviews reviews={product?.reviews} /> */}
 
       {/* <div className={window.location.search.includes('category=') ? "col-12 col-md-9": "col-12 col-md-12 "}>
           <h1 id="products_heading" className="text-secondary">

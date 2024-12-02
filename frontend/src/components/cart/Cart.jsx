@@ -618,7 +618,7 @@ const Cart = () => {
                         </MDBCol>
                       </MDBRow> */}
                     </MDBCardBody>
-                    <hr className="my-4" />
+                    {/* <hr className="my-4" />
                     <MDBInput
                       placeholder="Nhập MGG"
                       wrapperClass="flex-fill"
@@ -627,7 +627,7 @@ const Cart = () => {
                         border: "2px solid #B9D3EE", // Thay đổi màu viền tại đây
                         borderRadius: "4px", // Tùy chọn, bo góc cho viền
                       }}
-                    />
+                    /> */}
                     <MDBRow
                       className="justify-content-center align-items-center mb-4"
                       // style={{

@@ -739,7 +739,7 @@ const Shipping = () => {
                       </MDBCol>
                     </MDBRow>
                   </MDBCardBody>
-                  <hr className="my-4" />
+                  {/* <hr className="my-4" />
                   <MDBInput
                     placeholder="NON VOUCHER"
                     wrapperClass="flex-fill"
@@ -749,7 +749,7 @@ const Shipping = () => {
                       borderRadius: "4px", // Tùy chọn, bo góc cho viền
                     }}
                     disabled={true}
-                  />
+                  /> */}
                   <MDBRow className="justify-content-center align-items-center mb-4">
                     <button
                       style={{

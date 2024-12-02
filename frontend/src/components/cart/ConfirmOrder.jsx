@@ -697,7 +697,7 @@ const ConfirmOrder = () => {
                     </MDBCol>
                   </MDBRow>
 
-                  <hr className="my-4" />
+                  {/* <hr className="my-4" />
                   <MDBInput
                     placeholder="NON VOUCHER"
                     wrapperClass="flex-fill"
@@ -707,7 +707,7 @@ const ConfirmOrder = () => {
                       borderRadius: "4px", // Tùy chọn, bo góc cho viền
                     }}
                     disabled={true}
-                  />
+                  /> */}
                   {/* <hr className="my-4" />
                   <MDBRow className="justify-content-center align-items-center mb-4">
                     <MDBTypography tag="h4" className="mb-0">
