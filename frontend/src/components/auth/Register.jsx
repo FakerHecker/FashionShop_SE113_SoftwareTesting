@@ -81,10 +81,10 @@ const Register = () => {
     if (!user.name) {
       errors.push("Họ tên không được để trống");
     }
-    if (!user.email) {
+    if (!userData.email) {
       errors.push("Email không được để trống");
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(user.email)) {
-      errors.push("Email không đúng định dạng (vd: example@domain.com)");
+    } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(userData.email)) {
+      errors.push("Email không đúng định dạng");
     }
     if (!user.password) {
       errors.push("Mật khẩu không được để trống");
