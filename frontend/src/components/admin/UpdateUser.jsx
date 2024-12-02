@@ -66,6 +66,8 @@ const UpdateUser = () => {
     }
     if (!userData.email) {
       errors.push("Email không được để trống");
+    } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(userData.email)) {
+      errors.push("Email không đúng định dạng");
     }
     if (!userData.phone) {
       errors.push("Số điện thoại không được để trống");
