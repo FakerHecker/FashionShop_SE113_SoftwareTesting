@@ -41,6 +41,7 @@ const UpdateProfile = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    console.log(phone)
 
     // Dispatch login'
     const userData = {
@@ -125,14 +126,27 @@ const UpdateProfile = () => {
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
               /> */}
-              <PhoneInput 
+              <PhoneInput
                 international
                 defaultCountry="VN"
                 id="phone_field"
                 className="form-control"
                 name="phone"
                 value={phone}
-                onChange={(value) => setPhone(value)}
+                onChange={(value) => {
+                  console.log(value)
+                  if (value && value.startsWith && !value.startsWith("+84")) {
+                    // setPhone("+84");
+                    setPhone(value);
+                  } else {
+                    setPhone(value);
+                  }
+                }}
+                // onChange={(value) => setPhone(value)}
+                countrySelectProps={{
+                  disabled: true, // Ngăn không cho thay đổi quốc gia
+                  style: { opacity: 0, cursor: "not-allowed" }, // Làm mờ và thay đổi con trỏ
+                }}
               />
             </div>
 
