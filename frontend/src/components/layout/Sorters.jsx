@@ -34,8 +34,8 @@ const Sorters = () => {
           <option value="">Để trống</option>
           <option value="price">Giá: Thấp đến Cao</option>
           <option value="-price">Giá: Cao đến Thấp</option>
-          <option value="ratings">Đánh giá: Thấp đến Cao</option>
-          <option value="-ratings">Đánh giá: Cao đến Thấp</option>
+          {/* <option value="ratings">Đánh giá: Thấp đến Cao</option>
+          <option value="-ratings">Đánh giá: Cao đến Thấp</option> */}
         </select>
       </div>
     </div>
