@@ -247,8 +247,8 @@ export const getAdminProducts = catchAsyncErrors(async (req, res, next) => {
   });
 });
 
-// Update chi tiết sản phẩm => api/products/:id
-export const updateProduct = catchAsyncErrors(async (req, res) => {
+// Update chi tiết sản phẩm => api/products/:id => bug fixed when unit testing/remember to logging this
+export const updateProduct = catchAsyncErrors(async (req, res, next) => {
   // Khai báo hàm điều khiển newProduct nhận req và res làm tham số
   let product = await Product.findById(req?.params?.id); // Tìm kiếm sản phẩm: sử dụng phương thức findById của Mongoose để tìm kiếm sản phẩm với ID được cung cấp trong yêu cầu (req.params.id).
   if (!product) {
@@ -297,6 +297,7 @@ export const updateProduct = catchAsyncErrors(async (req, res) => {
     console.log("Cache flushed successfully");
   } catch (err) {
     console.error("Redis error:", err);
+    return next(new ErrorHandler("Lỗi kết nối Redis", 500));
   }
 
 
