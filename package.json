@@ -12,6 +12,7 @@
     "prod-build": "SET NODE_ENV=PRODUCTION& node build/app.js",
     "prod-docker": "node build/app.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test-coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
     "test:watch": "nodemon --exec 'npm test'"
   },
   "author": "HungNamAnhQuoc",
