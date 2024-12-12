@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1733938909105" clover="3.2.0">
-  <project timestamp="1733938909105" name="All files">
-    <metrics statements="864" coveredstatements="267" conditionals="255" coveredconditionals="44" methods="117" coveredmethods="22" elements="1236" coveredelements="333" complexity="0" loc="864" ncloc="864" packages="7" files="33" classes="33"/>
+<coverage generated="1734019261112" clover="3.2.0">
+  <project timestamp="1734019261112" name="All files">
+    <metrics statements="864" coveredstatements="287" conditionals="255" coveredconditionals="62" methods="117" coveredmethods="24" elements="1236" coveredelements="373" complexity="0" loc="864" ncloc="864" packages="7" files="33" classes="33"/>
     <package name="backend">
       <metrics statements="37" coveredstatements="27" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="3"/>
       <file name="app.js" path="D:\SE113\FashionShop_SE113_SoftwareTesting\backend\app.js">
@@ -727,7 +727,7 @@
       </file>
     </package>
     <package name="backend.middlewares">
-      <metrics statements="40" coveredstatements="6" conditionals="24" coveredconditionals="0" methods="8" coveredmethods="3"/>
+      <metrics statements="40" coveredstatements="26" conditionals="24" coveredconditionals="18" methods="8" coveredmethods="5"/>
       <file name="auth.js" path="D:\SE113\FashionShop_SE113_SoftwareTesting\backend\middlewares\auth.js">
         <metrics statements="18" coveredstatements="4" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="1"/>
         <line num="7" count="1" type="stmt"/>
@@ -755,27 +755,27 @@
         <line num="6" count="20" type="stmt"/>
       </file>
       <file name="errors.js" path="D:\SE113\FashionShop_SE113_SoftwareTesting\backend\middlewares\errors.js">
-        <metrics statements="20" coveredstatements="0" conditionals="18" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="54" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="55" count="0" type="stmt"/>
-        <line num="62" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="63" count="0" type="stmt"/>
+        <metrics statements="20" coveredstatements="20" conditionals="18" coveredconditionals="18" methods="2" coveredmethods="2"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="15" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="23" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="31" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="39" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="47" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="54" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="55" count="5" type="stmt"/>
+        <line num="62" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="63" count="1" type="stmt"/>
       </file>
     </package>
     <package name="backend.models">
@@ -947,9 +947,9 @@
       </file>
       <file name="errorHandler.js" path="D:\SE113\FashionShop_SE113_SoftwareTesting\backend\utils\errorHandler.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="8" count="18" type="stmt"/>
-        <line num="9" count="18" type="stmt"/>
-        <line num="11" count="18" type="stmt"/>
+        <line num="8" count="23" type="stmt"/>
+        <line num="9" count="23" type="stmt"/>
+        <line num="11" count="23" type="stmt"/>
       </file>
       <file name="redisClient.js" path="D:\SE113\FashionShop_SE113_SoftwareTesting\backend\utils\redisClient.js">
         <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>

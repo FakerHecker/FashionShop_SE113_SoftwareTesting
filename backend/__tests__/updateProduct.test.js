@@ -127,6 +127,8 @@ test("should handle Redis error when flushing cache", async () => {
   const { updateProduct } = await import("../controllers/productControllers");
   const ErrorHandler = (await import("../utils/errorHandler")).default;
 
+  // Mock console.error để kiểm tra log lỗi
+  console.error = jest.fn();
 
   // Gọi hàm updateProduct
   await updateProduct(req, res, next);
@@ -143,4 +145,8 @@ test("should handle Redis error when flushing cache", async () => {
 
   // Kiểm tra next được gọi với ErrorHandler có thông điệp lỗi "Lỗi kết nối Redis" và mã 500
   expect(next).toHaveBeenCalledWith(new ErrorHandler("Lỗi kết nối Redis", 500));
+
+  // Kiểm tra console.error có nhận thông điệp lỗi Redis từ Redis client không
+  expect(console.error).toHaveBeenCalledWith("Redis error:", expect.any(Error));
+  expect(console.error.mock.calls[0][1].message).toBe("Redis flush error");
 });

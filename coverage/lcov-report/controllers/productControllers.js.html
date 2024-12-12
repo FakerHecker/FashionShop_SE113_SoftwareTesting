@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for backend/utils/emailTemplates.js</title>
+    <title>Code coverage report for controllers/productControllers.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../prettify.css" />
-    <link rel="stylesheet" href="../../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../sort-arrow-sprite.png);
+            background-image: url(../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">backend/utils</a> emailTemplates.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">controllers</a> productControllers.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">13.04% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>24/184</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">6.25% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>4/64</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">4.54% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>1/22</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">13.18% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>24/182</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -633,7 +633,110 @@
 <a name='L568'></a><a href='#L568'>568</a>
 <a name='L569'></a><a href='#L569'>569</a>
 <a name='L570'></a><a href='#L570'>570</a>
-<a name='L571'></a><a href='#L571'>571</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">13x</span>
+<a name='L571'></a><a href='#L571'>571</a>
+<a name='L572'></a><a href='#L572'>572</a>
+<a name='L573'></a><a href='#L573'>573</a>
+<a name='L574'></a><a href='#L574'>574</a>
+<a name='L575'></a><a href='#L575'>575</a>
+<a name='L576'></a><a href='#L576'>576</a>
+<a name='L577'></a><a href='#L577'>577</a>
+<a name='L578'></a><a href='#L578'>578</a>
+<a name='L579'></a><a href='#L579'>579</a>
+<a name='L580'></a><a href='#L580'>580</a>
+<a name='L581'></a><a href='#L581'>581</a>
+<a name='L582'></a><a href='#L582'>582</a>
+<a name='L583'></a><a href='#L583'>583</a>
+<a name='L584'></a><a href='#L584'>584</a>
+<a name='L585'></a><a href='#L585'>585</a>
+<a name='L586'></a><a href='#L586'>586</a>
+<a name='L587'></a><a href='#L587'>587</a>
+<a name='L588'></a><a href='#L588'>588</a>
+<a name='L589'></a><a href='#L589'>589</a>
+<a name='L590'></a><a href='#L590'>590</a>
+<a name='L591'></a><a href='#L591'>591</a>
+<a name='L592'></a><a href='#L592'>592</a>
+<a name='L593'></a><a href='#L593'>593</a>
+<a name='L594'></a><a href='#L594'>594</a>
+<a name='L595'></a><a href='#L595'>595</a>
+<a name='L596'></a><a href='#L596'>596</a>
+<a name='L597'></a><a href='#L597'>597</a>
+<a name='L598'></a><a href='#L598'>598</a>
+<a name='L599'></a><a href='#L599'>599</a>
+<a name='L600'></a><a href='#L600'>600</a>
+<a name='L601'></a><a href='#L601'>601</a>
+<a name='L602'></a><a href='#L602'>602</a>
+<a name='L603'></a><a href='#L603'>603</a>
+<a name='L604'></a><a href='#L604'>604</a>
+<a name='L605'></a><a href='#L605'>605</a>
+<a name='L606'></a><a href='#L606'>606</a>
+<a name='L607'></a><a href='#L607'>607</a>
+<a name='L608'></a><a href='#L608'>608</a>
+<a name='L609'></a><a href='#L609'>609</a>
+<a name='L610'></a><a href='#L610'>610</a>
+<a name='L611'></a><a href='#L611'>611</a>
+<a name='L612'></a><a href='#L612'>612</a>
+<a name='L613'></a><a href='#L613'>613</a>
+<a name='L614'></a><a href='#L614'>614</a>
+<a name='L615'></a><a href='#L615'>615</a>
+<a name='L616'></a><a href='#L616'>616</a>
+<a name='L617'></a><a href='#L617'>617</a>
+<a name='L618'></a><a href='#L618'>618</a>
+<a name='L619'></a><a href='#L619'>619</a>
+<a name='L620'></a><a href='#L620'>620</a>
+<a name='L621'></a><a href='#L621'>621</a>
+<a name='L622'></a><a href='#L622'>622</a>
+<a name='L623'></a><a href='#L623'>623</a>
+<a name='L624'></a><a href='#L624'>624</a>
+<a name='L625'></a><a href='#L625'>625</a>
+<a name='L626'></a><a href='#L626'>626</a>
+<a name='L627'></a><a href='#L627'>627</a>
+<a name='L628'></a><a href='#L628'>628</a>
+<a name='L629'></a><a href='#L629'>629</a>
+<a name='L630'></a><a href='#L630'>630</a>
+<a name='L631'></a><a href='#L631'>631</a>
+<a name='L632'></a><a href='#L632'>632</a>
+<a name='L633'></a><a href='#L633'>633</a>
+<a name='L634'></a><a href='#L634'>634</a>
+<a name='L635'></a><a href='#L635'>635</a>
+<a name='L636'></a><a href='#L636'>636</a>
+<a name='L637'></a><a href='#L637'>637</a>
+<a name='L638'></a><a href='#L638'>638</a>
+<a name='L639'></a><a href='#L639'>639</a>
+<a name='L640'></a><a href='#L640'>640</a>
+<a name='L641'></a><a href='#L641'>641</a>
+<a name='L642'></a><a href='#L642'>642</a>
+<a name='L643'></a><a href='#L643'>643</a>
+<a name='L644'></a><a href='#L644'>644</a>
+<a name='L645'></a><a href='#L645'>645</a>
+<a name='L646'></a><a href='#L646'>646</a>
+<a name='L647'></a><a href='#L647'>647</a>
+<a name='L648'></a><a href='#L648'>648</a>
+<a name='L649'></a><a href='#L649'>649</a>
+<a name='L650'></a><a href='#L650'>650</a>
+<a name='L651'></a><a href='#L651'>651</a>
+<a name='L652'></a><a href='#L652'>652</a>
+<a name='L653'></a><a href='#L653'>653</a>
+<a name='L654'></a><a href='#L654'>654</a>
+<a name='L655'></a><a href='#L655'>655</a>
+<a name='L656'></a><a href='#L656'>656</a>
+<a name='L657'></a><a href='#L657'>657</a>
+<a name='L658'></a><a href='#L658'>658</a>
+<a name='L659'></a><a href='#L659'>659</a>
+<a name='L660'></a><a href='#L660'>660</a>
+<a name='L661'></a><a href='#L661'>661</a>
+<a name='L662'></a><a href='#L662'>662</a>
+<a name='L663'></a><a href='#L663'>663</a>
+<a name='L664'></a><a href='#L664'>664</a>
+<a name='L665'></a><a href='#L665'>665</a>
+<a name='L666'></a><a href='#L666'>666</a>
+<a name='L667'></a><a href='#L667'>667</a>
+<a name='L668'></a><a href='#L668'>668</a>
+<a name='L669'></a><a href='#L669'>669</a>
+<a name='L670'></a><a href='#L670'>670</a>
+<a name='L671'></a><a href='#L671'>671</a>
+<a name='L672'></a><a href='#L672'>672</a>
+<a name='L673'></a><a href='#L673'>673</a>
+<a name='L674'></a><a href='#L674'>674</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -646,16 +749,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -671,25 +786,41 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -697,9 +828,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -768,10 +902,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -786,51 +924,77 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -864,89 +1028,146 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -955,15 +1176,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -973,42 +1202,62 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1016,47 +1265,72 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1065,12 +1339,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1079,17 +1359,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1124,672 +1409,696 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const getResetPasswordTemplate = (username, resetUrl) =&gt; `
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
-&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
-  &lt;head&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-    &lt;meta name="x-apple-disable-message-reformatting" /&gt;
-    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
-    &lt;meta name="color-scheme" content="light dark" /&gt;
-    &lt;meta name="supported-color-schemes" content="light dark" /&gt;
-    &lt;title&gt;&lt;/title&gt;
-    &lt;style type="text/css" rel="stylesheet" media="all"&gt;
-      @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&amp;display=swap");
-      body {
-        width: 100% !important;
-        height: 100%;
-        margin: 0;
-        -webkit-text-size-adjust: none;
-      }
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// backend/controllers/productControllers.js
+import Product from "../models/product.js"; // Import model Product từ đường dẫn ../models/product.js
+import Order from "../models/order.js";
+import APIFilters from "../utils/apiFilters.js";
+import ErrorHandler from "../utils/errorHandler.js";
+import catchAsyncErrors from "../middlewares/catchAsyncErrors.js";
+import { delete_file, upload_file } from "../utils/cloudinary.js";
+import redisClient from "../utils/redisClient.js";
+/*
+Hàm điều khiển (controller functions) cho các file routes và xác định route
+Các điều khiển và các logic cho tài nguyên sản phẩm (product resource)
+*/
+//  api/products
+export const getProducts = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
+  // Số sản phẩm trên mỗi trang
+  const resPerPage = <span class="cstat-no" title="statement not covered" >8;</span>
+  let topRatedProducts = <span class="cstat-no" title="statement not covered" >[];</span>
 &nbsp;
-      a {
-        color: #3869d4;
-      }
+  // Check if it's a request for the Homepage by looking for the absence of specific filters
+  const isHomepageRequest =
+<span class="cstat-no" title="statement not covered" >    !req.query.keyword &amp;&amp;</span>
+    !req.query.category &amp;&amp;
+    !req.query.subCategory &amp;&amp;
+    !req.query.subSubCategory;
+    // Tạo khóa cache cho trang chủ và các truy vấn khác nhau
+    const homepageCacheKey = <span class="cstat-no" title="statement not covered" >'topRatedProducts';</span>
+    const filterCacheKey = <span class="cstat-no" title="statement not covered" >JSON.stringify(req.query);</span>
 &nbsp;
-      a img {
-        border: none;
-      }
+<span class="cstat-no" title="statement not covered" >    if (isHomepageRequest) {</span>
+<span class="cstat-no" title="statement not covered" >      try {</span>
+        const cachedTopRatedProducts = <span class="cstat-no" title="statement not covered" >await redisClient.get(homepageCacheKey);</span>
+<span class="cstat-no" title="statement not covered" >        if (cachedTopRatedProducts) {</span>
+<span class="cstat-no" title="statement not covered" >          topRatedProducts = JSON.parse(cachedTopRatedProducts);</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          topRatedProducts = await Product.aggregate([</span>
+            {
+              $match: {
+                ratings: { $gte: 4 },
+                visible: { $ne: false },
+              },
+            },
+            {
+              $sort: { numOfReviews: -1 },
+            },
+            {
+              $limit: 12,
+            },
+          ]);
 &nbsp;
-      td {
-        word-break: break-word;
-      }
-&nbsp;
-      .preheader {
-        display: none !important;
-        visibility: hidden;
-        mso-hide: all;
-        font-size: 1px;
-        line-height: 1px;
-        max-height: 0;
-        max-width: 0;
-        opacity: 0;
-        overflow: hidden;
-      }
-&nbsp;
-      body,
-      td,
-      th {
-        font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
-      }
-&nbsp;
-      h1 {
-        margin-top: 0;
-        color: #333333;
-        font-size: 22px;
-        font-weight: bold;
-        text-align: left;
-      }
-&nbsp;
-      h2 {
-        margin-top: 0;
-        color: #333333;
-        font-size: 16px;
-        font-weight: bold;
-        text-align: left;
-      }
-&nbsp;
-      h3 {
-        margin-top: 0;
-        color: #333333;
-        font-size: 14px;
-        font-weight: bold;
-        text-align: left;
-      }
-&nbsp;
-      td,
-      th {
-        font-size: 16px;
-      }
-&nbsp;
-      p,
-      ul,
-      ol,
-      blockquote {
-        margin: 0.4em 0 1.1875em;
-        font-size: 16px;
-        line-height: 1.625;
-      }
-&nbsp;
-      p.sub {
-        font-size: 13px;
-      }
-&nbsp;
-      .align-right {
-        text-align: right;
-      }
-&nbsp;
-      .align-left {
-        text-align: left;
-      }
-&nbsp;
-      .align-center {
-        text-align: center;
-      }
-&nbsp;
-      .u-margin-bottom-none {
-        margin-bottom: 0;
-      }
-&nbsp;
-      .button {
-        background-color: #3869d4;
-        border-top: 10px solid #3869d4;
-        border-right: 18px solid #3869d4;
-        border-bottom: 10px solid #3869d4;
-        border-left: 18px solid #3869d4;
-        display: inline-block;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 3px;
-        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
-        -webkit-text-size-adjust: none;
-        box-sizing: border-box;
-      }
-&nbsp;
-      .button--green {
-        background-color: #22bc66;
-        border-top: 10px solid #22bc66;
-        border-right: 18px solid #22bc66;
-        border-bottom: 10px solid #22bc66;
-        border-left: 18px solid #22bc66;
-      }
-&nbsp;
-      .button--red {
-        background-color: #ff6136;
-        border-top: 10px solid #ff6136;
-        border-right: 18px solid #ff6136;
-        border-bottom: 10px solid #ff6136;
-        border-left: 18px solid #ff6136;
-      }
-&nbsp;
-      @media only screen and (max-width: 500px) {
-        .button {
-          width: 100% !important;
-          text-align: center !important;
+          // Cache top rated products for 1 hour
+<span class="cstat-no" title="statement not covered" >          await redisClient.set(homepageCacheKey, JSON.stringify(topRatedProducts), 'EX', 60);</span>
         }
+      } catch (err) {
+<span class="cstat-no" title="statement not covered" >        console.error('Redis error:', err);</span>
+<span class="cstat-no" title="statement not covered" >        next(new ErrorHandler('Lỗi kết nối Redis', 500));</span>
+      }
+    }
+&nbsp;
+  // Kiểm tra cache cho các truy vấn có bộ lọc
+  let products, filteredProductsCount;
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    let cachedProducts = <span class="cstat-no" title="statement not covered" >await redisClient.get(filterCacheKey);</span>
+    // cachedProducts = null; // enable if test new code
+<span class="cstat-no" title="statement not covered" >    if (cachedProducts) {</span>
+      const cachedData = <span class="cstat-no" title="statement not covered" >JSON.parse(cachedProducts);</span>
+<span class="cstat-no" title="statement not covered" >      products = cachedData.products;</span>
+<span class="cstat-no" title="statement not covered" >      filteredProductsCount = cachedData.filteredProductsCount;</span>
+    } else {
+      // Áp dụng bộ lọc từ yêu cầu API
+      // const apiFilters = new APIFilters(Product, req.query)
+      const apiFilters = <span class="cstat-no" title="statement not covered" >new APIFilters(Product.find({ visible: { $ne: false } }), req.query)</span>
+        .search()
+        .filters()
+        .sorting();
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      products = await apiFilters.query;</span>
+<span class="cstat-no" title="statement not covered" >      filteredProductsCount = products.length;</span>
+<span class="cstat-no" title="statement not covered" >      console.log("filteredProductsCount: ", filteredProductsCount);</span>
+&nbsp;
+      // Phân trang sản phẩm
+<span class="cstat-no" title="statement not covered" >      apiFilters.pagination(resPerPage);</span>
+<span class="cstat-no" title="statement not covered" >      products = await apiFilters.query.clone();</span>
+&nbsp;
+      // Cache filtered products for 1 hour
+<span class="cstat-no" title="statement not covered" >      await redisClient.set(</span>
+        filterCacheKey,
+        JSON.stringify({ products, filteredProductsCount }),
+        'EX',
+        3600
+      );
+    }
+  } catch (err) {
+<span class="cstat-no" title="statement not covered" >    console.error('Redis error:', err);</span>
+<span class="cstat-no" title="statement not covered" >    next(new ErrorHandler('Lỗi kết nối Redis', 500));</span>
+  }
+&nbsp;
+  // Trả về danh sách sản phẩm đã được lọc và phân trang
+<span class="cstat-no" title="statement not covered" >  res.status(200).json({</span>
+    resPerPage,
+    filteredProductsCount,
+    products,
+    topRatedProducts: isHomepageRequest ? topRatedProducts : [],
+  });
+});
+&nbsp;
+// export const getProducts = catchAsyncErrors(async (req, res) =&gt; {
+//   // Số sản phẩm trên mỗi trang
+//   const resPerPage = 8;
+//   let topRatedProducts = [];
+&nbsp;
+//   // Check if it's a request for the Homepage by looking for the absence of specific filters
+//   const isHomepageRequest =
+//     !req.query.keyword &amp;&amp;
+//     !req.query.category &amp;&amp;
+//     !req.query.subCategory &amp;&amp;
+//     !req.query.subSubCategory;
+&nbsp;
+//   if (isHomepageRequest) {
+//     // topRatedProducts = await Product.find().sort({ ratings: -1 }).limit(8);
+//     topRatedProducts = await Product.aggregate([
+//       {
+//         $match: {
+//           ratings: { $gte: 4 },
+//         },
+//       },
+//       // {
+//       //   $addFields: {
+//       //     reviewsCount: { $size: "$reviews" }
+//       //   }
+//       // },
+//       {
+//         // $sort: { reviewsCount: -1 }
+//         $sort: { numOfReviews: -1 },
+//       },
+//       {
+//         $limit: 12,
+//       },
+//     ]);
+//   } // Fetch the top 8 rated products for the Homepage
+&nbsp;
+//   // Áp dụng bộ lọc từ yêu cầu API
+//   const apiFilters = new APIFilters(Product, req.query)
+//     .search()
+//     .filters()
+//     .sorting();
+&nbsp;
+//   // Lấy danh sách sản phẩm đã được lọc
+//   let products = await apiFilters.query;
+//   // Số lượng sản phẩm sau khi được lọc
+//   let filteredProductsCount = products.length;
+&nbsp;
+//   // Phân trang sản phẩm
+//   apiFilters.pagination(resPerPage);
+//   // Lấy lại danh sách sản phẩm sau khi phân trang
+//   products = await apiFilters.query.clone();
+&nbsp;
+//   // Trả về danh sách sản phẩm đã được lọc và phân trang
+//   res.status(200).json({
+//     resPerPage, // Số sản phẩm trên mỗi trang
+//     filteredProductsCount, // Số sản phẩm sau khi được lọc
+//     products, // Danh sách sản phẩm
+//     topRatedProducts: isHomepageRequest ? topRatedProducts : [], // Optionally include top rated products in every response
+//   });
+// });
+&nbsp;
+// Admin - Tạo sản phẩm mới với đường dẫn =&gt; /api/admin/products
+export const newProduct = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
+  // Khai báo hàm điều khiển newProduct nhận req và res làm tham số
+  // Thiết lập người dùng tạo sản phẩm bằng ID của người dùng đang đăng nhập
+<span class="cstat-no" title="statement not covered" >  req.body.user = req.user._id;</span>
+  const product = <span class="cstat-no" title="statement not covered" >await Product.create(req.body);</span> // Tạo một sản phẩm mới từ dữ liệu được gửi trong yêu cầu và gán cho biến product
+&nbsp;
+  // Làm sạch bộ nhớ cache cho danh sách sản phẩm trên trang chủ và các bộ lọc
+  const homepageCacheKey = <span class="cstat-no" title="statement not covered" >"topRatedProducts";</span>
+&nbsp;
+  // try {
+  //   // Xóa cache của danh sách sản phẩm trên trang chủ
+  //   await redisClient.del(homepageCacheKey);
+&nbsp;
+  //   const keys = await redisClient.keys("*");
+  //   const productKeys = keys.filter((key) =&gt; key.startsWith("product:"));
+  //   if (productKeys.length &gt; 0) {
+  //     await redisClient.del(productKeys);
+  //   }
+  // } catch (err) {
+  //   console.error("Redis error:", err);
+  // }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    // Xóa toàn bộ cache bằng cách sử dụng sendCommand với FLUSHDB
+<span class="cstat-no" title="statement not covered" >    await redisClient.sendCommand(['FLUSHDB']); </span>// Xóa toàn bộ cache
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    console.log("Cache flushed successfully");</span>
+  } catch (err) {
+<span class="cstat-no" title="statement not covered" >    console.error("Redis error:", err);</span>
+  }
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  res.status(200).json({</span>
+    // Trả về mã trạng thái 200 và dữ liệu JSON chứa thông tin sản phẩm mới được tạo
+    product, // Trả về thông tin của sản phẩm mới được tạo
+  });
+});
+&nbsp;
+// Hàm để lấy thông tin sản phẩm và lưu cache
+export const getProductDetails = catchAsyncErrors(async (req, res, next) =&gt; {
+  const productId = req.params.id;
+&nbsp;
+  try {
+    // Kiểm tra trong Redis cache trước
+    const product = await redisClient.get(productId);
+&nbsp;
+    if (product) {
+      // Nếu sản phẩm có trong cache, trả về kết quả từ cache
+      return res.status(200).json({ product: JSON.parse(product) });
+    } else {
+      // Nếu không có trong cache, lấy từ cơ sở dữ liệu
+      const product = await Product.findById(productId)
+        .populate("reviews.user")
+        .populate("reviews.order");
+&nbsp;
+      if (!product) {
+        return next(new ErrorHandler("Không tìm thấy sản phẩm", 404));
       }
 &nbsp;
-      .attributes {
-        margin: 0 0 21px;
+      // Lưu sản phẩm vào Redis cache với thời gian hết hạn (TTL) là 1 giờ (3600 giây)
+      await redisClient.set(productId, JSON.stringify(product), "EX", 3600);
+&nbsp;
+      // Trả về kết quả từ cơ sở dữ liệu
+      return res.status(200).json({ product });
+    }
+  } catch (err) {
+    console.error("Redis error:", err);
+    return next(new ErrorHandler("Lỗi kết nối Redis", 500));
+  }
+});
+&nbsp;
+// Get danh mục sản phẩm - ADMIN =&gt; /products/admin/products
+export const getAdminProducts = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
+  // Khai báo hàm điều khiển newProduct nhận req và res làm tham số
+  const products = <span class="cstat-no" title="statement not covered" >await Product.find();</span> // Tạo một sản phẩm mới từ dữ liệu được gửi trong yêu cầu và gán cho biến product
+  // console.log(products);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  res.status(200).json({</span>
+    // Trả về mã trạng thái 200 và dữ liệu JSON chứa thông tin sản phẩm mới được tạo
+    products, // Trả về thông tin của sản phẩm mới được tạo
+  });
+});
+&nbsp;
+// Update chi tiết sản phẩm =&gt; api/products/:id =&gt; bug fixed when unit testing/remember to logging this
+export const updateProduct = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
+  // Khai báo hàm điều khiển newProduct nhận req và res làm tham số
+  let product = <span class="cstat-no" title="statement not covered" >await Product.findById(req?.params?.id);</span> // Tìm kiếm sản phẩm: sử dụng phương thức findById của Mongoose để tìm kiếm sản phẩm với ID được cung cấp trong yêu cầu (req.params.id).
+<span class="cstat-no" title="statement not covered" >  if (!product) {</span>
+    //Kiểm tra sự tồn tại của sản phẩm:
+<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("Không tìm thấy sản phẩm", 404)); </span>//sử dụng một instance của lớp ErrorHandler và gọi hàm next để trả về lỗi 404
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  product = await Product.findByIdAndUpdate(req?.params?.id, req.body, {</span>
+    new: true,
+  });
+&nbsp;
+  // try {
+  //   // Xóa cache liên quan
+  //   await redisClient.del(req.params.id);
+  //   await redisClient.del('topRatedProducts');
+  //   await redisClient.del(filterCacheKey);
+&nbsp;
+  //   // Xóa cache liên quan đến các bộ lọc sản phẩm
+  //   const keys = await redisClient.keys('*');
+  //   const filterKeys = keys.filter(key =&gt; key.includes('products'));
+  //   if (filterKeys.length &gt; 0) {
+  //     await redisClient.del(filterKeys);
+  //   }
+  // } catch (err) {
+  //   console.error('Redis error:', err);
+  // }
+&nbsp;
+  // try {
+  //   await redisClient.del(req.params.id);
+  //   // await redisClient.del('topRatedProducts');
+&nbsp;
+  //   //Add this line to log the filter keys being deleted
+  //   //console.log("Deleting filter keys:", filterKeys);
+  //   const filterKeys = await redisClient.keys("filter:query*");
+  //   if (filterKeys.length &gt; 0) {
+  //     await redisClient.del(filterKeys);
+  //   }
+  // } catch (err) {
+  //   console.error("Redis error:", err);
+  // }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    // Xóa toàn bộ cache bằng cách sử dụng sendCommand với FLUSHDB
+<span class="cstat-no" title="statement not covered" >    await redisClient.sendCommand(['FLUSHDB']); </span>// Xóa toàn bộ cache
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    console.log("Cache flushed successfully");</span>
+  } catch (err) {
+<span class="cstat-no" title="statement not covered" >    console.error("Redis error:", err);</span>
+<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("Lỗi kết nối Redis", 500));</span>
+  }
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  res.status(200).json({</span>
+    // Trả về mã trạng thái 200 và dữ liệu JSON chứa thông tin sản phẩm mới được tạo
+    product, // Trả về thông tin của sản phẩm mới được tạo
+  });
+});
+&nbsp;
+// Upload hình ảnh sản phẩm =&gt; api/admin/products/:id/upload_images
+export const uploadProductImages = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
+  // Khai báo hàm điều khiển newProduct nhận req và res làm tham số
+  let product = <span class="cstat-no" title="statement not covered" >await Product.findById(req?.params?.id);</span> // Tìm kiếm sản phẩm: sử dụng phương thức findById của Mongoose để tìm kiếm sản phẩm với ID được cung cấp trong yêu cầu (req.params.id).
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!product) {</span>
+    //Kiểm tra sự tồn tại của sản phẩm:
+<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("Không tìm thấy sản phẩm", 404)); </span>//sử dụng một instance của lớp ErrorHandler và gọi hàm next để trả về lỗi 404
+  }
+&nbsp;
+  const uploader = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >as</span>ync (image) =&gt; <span class="cstat-no" title="statement not covered" >upload_file(image, "fashionshop/products");</span></span>
+&nbsp;
+  const urls = <span class="cstat-no" title="statement not covered" >await Promise.all((req?.body?.images).map(uploader));</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  product?.images?.push(...urls);</span>
+<span class="cstat-no" title="statement not covered" >  await product?.save();</span>
+&nbsp;
+  // Xóa cache liên quan đến sản phẩm
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    // Xóa cache của sản phẩm cụ thể
+<span class="cstat-no" title="statement not covered" >    await redisClient.del(req.params.id);</span>
+    // Xóa cache của các sản phẩm liên quan khác
+    //await redisClient.del('topRatedProducts');
+&nbsp;
+    // Xóa cache liên quan đến các bộ lọc sản phẩm
+    const keys = <span class="cstat-no" title="statement not covered" >await redisClient.keys("*");</span>
+    const filterKeys = <span class="cstat-no" title="statement not covered" >keys.filter(</span>
+<span class="fstat-no" title="function not covered" >      (k</span>ey) =&gt; <span class="cstat-no" title="statement not covered" >key.includes("filters") || key.includes("products")</span>
+    );
+<span class="cstat-no" title="statement not covered" >    if (filterKeys.length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >      await redisClient.del(filterKeys);</span>
+    }
+  } catch (err) {
+<span class="cstat-no" title="statement not covered" >    console.error("Redis error:", err);</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  res.status(200).json({</span>
+    // Trả về mã trạng thái 200 và dữ liệu JSON chứa thông tin sản phẩm mới được tạo
+    product, // Trả về thông tin của sản phẩm mới được tạo
+  });
+});
+&nbsp;
+// Delete hình ảnh sản phẩm =&gt; api/admin/products/:id/delete_image
+export const deleteProductImage = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
+  // Khai báo hàm điều khiển newProduct nhận req và res làm tham số
+  let product = <span class="cstat-no" title="statement not covered" >await Product.findById(req?.params?.id);</span> // Tìm kiếm sản phẩm: sử dụng phương thức findById của Mongoose để tìm kiếm sản phẩm với ID được cung cấp trong yêu cầu (req.params.id).
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!product) {</span>
+    //Kiểm tra sự tồn tại của sản phẩm:
+<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("Không tìm thấy sản phẩm", 404)); </span>//sử dụng một instance của lớp ErrorHandler và gọi hàm next để trả về lỗi 404
+  }
+&nbsp;
+  const isDeleted = <span class="cstat-no" title="statement not covered" >await delete_file(req.body.imgId);</span> // make sure chọn đúng delete_file from cloudinary.js
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (isDeleted) {</span>
+<span class="cstat-no" title="statement not covered" >    product.images = product?.images?.filter(</span>
+<span class="fstat-no" title="function not covered" >      (i</span>mg) =&gt; <span class="cstat-no" title="statement not covered" >img.public_id !== req.body.imgId</span>
+    );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    await product?.save();</span>
+  }
+  // Xóa cache liên quan đến sản phẩm
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    // Xóa cache của sản phẩm cụ thể
+<span class="cstat-no" title="statement not covered" >    await redisClient.del(req.params.id);</span>
+    // Xóa cache của các sản phẩm liên quan khác
+    //await redisClient.del('topRatedProducts');
+&nbsp;
+    // Xóa cache liên quan đến các bộ lọc sản phẩm
+    const keys = <span class="cstat-no" title="statement not covered" >await redisClient.keys("*");</span>
+    const filterKeys = <span class="cstat-no" title="statement not covered" >keys.filter(</span>
+<span class="fstat-no" title="function not covered" >      (k</span>ey) =&gt; <span class="cstat-no" title="statement not covered" >key.includes("filters") || key.includes("products")</span>
+    );
+<span class="cstat-no" title="statement not covered" >    if (filterKeys.length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >      await redisClient.del(filterKeys);</span>
+    }
+  } catch (err) {
+<span class="cstat-no" title="statement not covered" >    console.error("Redis error:", err);</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  res.status(200).json({</span>
+    // Trả về mã trạng thái 200 và dữ liệu JSON chứa thông tin sản phẩm mới được tạo
+    product, // Trả về thông tin của sản phẩm mới được tạo
+  });
+});
+&nbsp;
+//Xóa sản phẩm với đường dẫn =&gt; /products/:id
+export const deleteProduct = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
+  // Khai báo hàm điều khiển newProduct nhận req và res làm tham số
+  const product = <span class="cstat-no" title="statement not covered" >await Product.findById(req?.params?.id);</span> // Tìm kiếm sản phẩm: sử dụng phương thức findById của Mongoose để tìm kiếm sản phẩm với ID được cung cấp trong yêu cầu (req.params.id).
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!product) {</span>
+    //throw new error()
+<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("Không tìm thấy sản phẩm", 404)); </span>//sử dụng một instance của lớp ErrorHandler và gọi hàm next để trả về lỗi 404
+  }
+&nbsp;
+  // Delete hình ảnh của sản phẩm từ Cloudinary
+<span class="cstat-no" title="statement not covered" >  for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; product?.images?.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >    await delete_file(product?.images[i]?.public_id);</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  await product.deleteOne(); </span>//Nếu sản phẩm tồn tại, sử dụng phương thức deleteOne để xóa sản phẩm khỏi cơ sở dữ liệu.
+&nbsp;
+  // Xóa cache liên quan đến sản phẩm
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    // Xóa cache của sản phẩm cụ thể
+<span class="cstat-no" title="statement not covered" >    await redisClient.del(req.params.id);</span>
+    // Xóa cache của các sản phẩm liên quan khác
+    //await redisClient.del('topRatedProducts');
+&nbsp;
+    // Xóa cache liên quan đến các bộ lọc sản phẩm
+    const keys = <span class="cstat-no" title="statement not covered" >await redisClient.keys("*");</span>
+    const filterKeys = <span class="cstat-no" title="statement not covered" >keys.filter(</span>
+<span class="fstat-no" title="function not covered" >      (k</span>ey) =&gt; <span class="cstat-no" title="statement not covered" >key.includes("filters") || key.includes("products")</span>
+    );
+<span class="cstat-no" title="statement not covered" >    if (filterKeys.length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >      await redisClient.del(filterKeys);</span>
+    }
+  } catch (err) {
+<span class="cstat-no" title="statement not covered" >    console.error("Redis error:", err);</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  res.status(200).json({</span>
+    // Trả về mã trạng thái 200 và dữ liệu JSON chứa thông tin sản phẩm mới được xóa
+    message: "Đã xóa sản phẩm",
+  });
+});
+&nbsp;
+//------------------------------
+&nbsp;
+// Create/Update product review  =&gt;  /api/reviews
+export const createProductReview = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
+  // Trích xuất thông tin đánh giá từ yêu cầu
+  const { rating, comment, productId, orderID, selectedVariant} = <span class="cstat-no" title="statement not covered" >req.body;</span>
+&nbsp;
+  // Fetch order details
+  const order = <span class="cstat-no" title="statement not covered" >await Order.findById(orderID);</span>
+<span class="cstat-no" title="statement not covered" >  if (!order) {</span>
+<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("Không tìm thấy đơn hàng", 404));</span>
+  }
+&nbsp;
+  // Check if the order status is "Delivered"
+<span class="cstat-no" title="statement not covered" >  if (order.orderStatus !== "Delivered") {</span>
+<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("Bạn chỉ có thể đánh giá khi đã nhận hàng", 400));</span>
+  }
+&nbsp;
+  // Tạo đối tượng đánh giá
+  const review = <span class="cstat-no" title="statement not covered" >{</span>
+    user: req?.user?._id, // ID của người dùng đánh giá
+    // user: req?.body?.userID, // ID của người dùng đánh giá
+    rating: Number(rating), // Điểm đánh giá
+    comment, // Bình luận
+    order: orderID,
+    selectedVariant: selectedVariant,
+  };
+&nbsp;
+  // Tìm sản phẩm trong cơ sở dữ liệu bằng ID
+  const product = <span class="cstat-no" title="statement not covered" >await Product.findById(productId);</span>
+&nbsp;
+  // Kiểm tra xem sản phẩm có tồn tại không
+<span class="cstat-no" title="statement not covered" >  if (!product) {</span>
+    // Nếu không tìm thấy sản phẩm, trả về lỗi với mã trạng thái 404
+<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("Sản phẩm không tồn tại", 404));</span>
+  }
+&nbsp;
+  // Kiểm tra xem người dùng đã đánh giá sản phẩm này chưa
+  const isReviewed = <span class="cstat-no" title="statement not covered" >product?.reviews?.find(</span>
+<span class="fstat-no" title="function not covered" >    (r</span>) =&gt;
+<span class="cstat-no" title="statement not covered" >      r.user.toString() === req?.user?._id.toString() &amp;&amp;</span>
+      r.order.toString() === orderID.toString() &amp;&amp;
+      r.selectedVariant.variantID === req.body.selectedVariant.variantID
+  );
+&nbsp;
+  // Nếu người dùng đã đánh giá sản phẩm, cập nhật đánh giá
+<span class="cstat-no" title="statement not covered" >  if (isReviewed) {</span>
+<span class="cstat-no" title="statement not covered" >    product.reviews.forEach(<span class="fstat-no" title="function not covered" >(r</span>eview) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      if (</span>
+        review?.user?.toString() === req?.user?._id.toString() &amp;&amp;
+        review?.order?.toString() === req.body.orderID &amp;&amp;
+        review.selectedVariant.variantID === req.body.selectedVariant.variantID
+      ) {
+<span class="cstat-no" title="statement not covered" >        review.comment = comment;</span>
+<span class="cstat-no" title="statement not covered" >        review.rating = rating;</span>
       }
+    });
+  } else {
+    // Nếu người dùng chưa đánh giá sản phẩm, thêm đánh giá mới
+<span class="cstat-no" title="statement not covered" >    product.reviews.push(review);</span>
+<span class="cstat-no" title="statement not covered" >    product.numOfReviews = product.reviews.length;</span>
+  }
 &nbsp;
-      .attributes_content {
-        background-color: #f4f4f7;
-        padding: 16px;
-      }
+  // Tính toán lại điểm đánh giá trung bình của sản phẩm
+<span class="cstat-no" title="statement not covered" >  product.ratings =</span>
+    product.reviews.reduce(<span class="fstat-no" title="function not covered" >(a</span>cc, item) =&gt; <span class="cstat-no" title="statement not covered" >item.rating + acc,</span> 0) /
+    product.reviews.length;
 &nbsp;
-      .attributes_item {
-        padding: 0;
-      }
+  // Lưu thay đổi vào cơ sở dữ liệu
+<span class="cstat-no" title="statement not covered" >  await product.save({ validateBeforeSave: false });</span>
 &nbsp;
-      .related {
-        width: 100%;
-        margin: 0;
-        padding: 25px 0 0 0;
-        -premailer-width: 100%;
-        -premailer-cellpadding: 0;
-        -premailer-cellspacing: 0;
-      }
+  // Xóa cache liên quan đến sản phẩm và đánh giá sản phẩm
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    //const product_Id = req.query.productId;
+    //await redisClient.del(product_Id);
+<span class="cstat-no" title="statement not covered" >    await redisClient.del(`productReviews:${productId}`);</span>
+<span class="cstat-no" title="statement not covered" >    await redisClient.del(productId);</span>
+    // const homepageCacheKey = 'topRatedProducts';
+    // await redisClient.del(homepageCacheKey);
+  } catch (err) {
+<span class="cstat-no" title="statement not covered" >    console.error("Redis error:", err);</span>
+  }
 &nbsp;
-      .related_item {
-        padding: 10px 0;
-        color: #cbcccf;
-        font-size: 15px;
-        line-height: 18px;
-      }
+  // Trả về thành công với mã trạng thái 200
+<span class="cstat-no" title="statement not covered" >  res.status(200).json({</span>
+    success: true,
+  });
+});
 &nbsp;
-      .related_item-title {
-        display: block;
-        margin: 0.5em 0 0;
-      }
+//----------------------------------
 &nbsp;
-      .related_item-thumb {
-        display: block;
-        padding-bottom: 10px;
-      }
+// Get product reviews  =&gt;  /api/reviews
+export const getProductReviews = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
+  const productID = <span class="cstat-no" title="statement not covered" >req.query.id;</span>
 &nbsp;
-      .related_heading {
-        border-top: 1px solid #cbcccf;
-        text-align: center;
-        padding: 25px 0 10px;
-      }
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    // Kiểm tra trong Redis cache trước
+    const cacheKey = <span class="cstat-no" title="statement not covered" >`productReviews:${productID}`;</span>
+    const cachedReviews = <span class="cstat-no" title="statement not covered" >await redisClient.get(cacheKey);</span>
 &nbsp;
-      .discount {
-        width: 100%;
-        margin: 0;
-        padding: 24px;
-        -premailer-width: 100%;
-        -premailer-cellpadding: 0;
-        -premailer-cellspacing: 0;
-        background-color: #f4f4f7;
-        border: 2px dashed #cbcccf;
-      }
+<span class="cstat-no" title="statement not covered" >    if (cachedReviews) {</span>
+      // Nếu đánh giá có trong cache, trả về kết quả từ cache
+<span class="cstat-no" title="statement not covered" >      return res.status(200).json({</span>
+        reviews: JSON.parse(cachedReviews),
+      });
+    }
+    // Tìm sản phẩm trong cơ sở dữ liệu bằng ID
+    const product = <span class="cstat-no" title="statement not covered" >await Product.findById(productID).populate("reviews.order").populate("reviews.user");</span>
 &nbsp;
-      .discount_heading {
-        text-align: center;
-      }
+    // Kiểm tra xem sản phẩm có tồn tại không
+<span class="cstat-no" title="statement not covered" >    if (!product) {</span>
+      // Nếu không tìm thấy sản phẩm, trả về lỗi với mã trạng thái 404
+<span class="cstat-no" title="statement not covered" >      return next(new ErrorHandler("Sản phẩm không tồn tại", 404));</span>
+    }
+    const reviews = <span class="cstat-no" title="statement not covered" >product.reviews;</span>
+    // Lưu đánh giá vào Redis cache với thời gian hết hạn (TTL) là 1 giờ (3600 giây)
+<span class="cstat-no" title="statement not covered" >    await redisClient.set(cacheKey, JSON.stringify(reviews), "EX", 3600);</span>
 &nbsp;
-      .discount_body {
-        text-align: center;
-        font-size: 15px;
-      }
+    // Trả về danh sách các đánh giá của sản phẩm với mã trạng thái 200
+<span class="cstat-no" title="statement not covered" >    res.status(200).json({</span>
+      reviews,
+    });
+    } catch (err) {
+<span class="cstat-no" title="statement not covered" >      console.error("Redis error:", err);</span>
+<span class="cstat-no" title="statement not covered" >      return next(new ErrorHandler("Lỗi kết nối Redis", 500));</span>
+    }
+});
 &nbsp;
-      .social {
-        width: auto;
-      }
+//-----------------------------------
 &nbsp;
-      .social td {
-        padding: 0;
-        width: auto;
-      }
+// Delete product review   =&gt;  /api/admin/reviews
+export const deleteReview = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
+  // Tìm sản phẩm trong cơ sở dữ liệu bằng ID
+  let product = <span class="cstat-no" title="statement not covered" >await Product.findById(req.query.productId);</span>
 &nbsp;
-      .social_icon {
-        height: 20px;
-        margin: 0 8px 10px 8px;
-        padding: 0;
-      }
+  // Kiểm tra xem sản phẩm có tồn tại không
+<span class="cstat-no" title="statement not covered" >  if (!product) {</span>
+    // Nếu không tìm thấy sản phẩm, trả về lỗi với mã trạng thái 404
+<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("Sản phẩm không tồn tại", 404));</span>
+  }
 &nbsp;
-      .purchase {
-        width: 100%;
-        margin: 0;
-        padding: 35px 0;
-        -premailer-width: 100%;
-        -premailer-cellpadding: 0;
-        -premailer-cellspacing: 0;
-      }
+  // Lọc ra các đánh giá mà không có ID trùng với ID của đánh giá cần xóa
+  const reviews = <span class="cstat-no" title="statement not covered" >product?.reviews?.filter(</span>
+<span class="fstat-no" title="function not covered" >    (r</span>eview) =&gt; <span class="cstat-no" title="statement not covered" >review._id.toString() !== req?.query?.id.toString()</span>
+  );
 &nbsp;
-      .purchase_content {
-        width: 100%;
-        margin: 0;
-        padding: 25px 0 0 0;
-        -premailer-width: 100%;
-        -premailer-cellpadding: 0;
-        -premailer-cellspacing: 0;
-      }
+  // Số lượng đánh giá mới sau khi xóa
+  const numOfReviews = <span class="cstat-no" title="statement not covered" >reviews.length;</span>
 &nbsp;
-      .purchase_item {
-        padding: 10px 0;
-        color: #51545e;
-        font-size: 15px;
-        line-height: 18px;
-      }
+  // Tính toán lại điểm đánh giá trung bình của sản phẩm
+  const ratings =
+<span class="cstat-no" title="statement not covered" >    numOfReviews === 0</span>
+      ? 0
+      : product.reviews.reduce(<span class="fstat-no" title="function not covered" >(a</span>cc, item) =&gt; <span class="cstat-no" title="statement not covered" >item.rating + acc,</span> 0) /
+        numOfReviews;
 &nbsp;
-      .purchase_heading {
-        padding-bottom: 8px;
-        border-bottom: 1px solid #eaeaec;
-      }
+  // Cập nhật sản phẩm với các thông tin mới
+<span class="cstat-no" title="statement not covered" >  product = await Product.findByIdAndUpdate(</span>
+    req.query.productId,
+    { reviews, numOfReviews, ratings },
+    { new: true }
+  );
 &nbsp;
-      .purchase_heading p {
-        margin: 0;
-        color: #85878e;
-        font-size: 12px;
-      }
+  // Xóa cache liên quan đến sản phẩm
 &nbsp;
-      .purchase_footer {
-        padding-top: 15px;
-        border-top: 1px solid #eaeaec;
-      }
+  // Xóa cache liên quan đến sản phẩm và đánh giá sản phẩm
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    const productId = <span class="cstat-no" title="statement not covered" >req.query.productId;</span>
+<span class="cstat-no" title="statement not covered" >    await redisClient.del(productId);</span>
+<span class="cstat-no" title="statement not covered" >    await redisClient.del(`productReviews:${productId}`);</span>
+    // const homepageCacheKey = 'topRatedProducts';
+    // await redisClient.del(homepageCacheKey);
+  } catch (err) {
+<span class="cstat-no" title="statement not covered" >    console.error("Redis error:", err);</span>
+  }
 &nbsp;
-      .purchase_total {
-        margin: 0;
-        text-align: right;
-        font-weight: bold;
-        color: #333333;
-      }
+  // Trả về thành công với mã trạng thái 200 và thông tin sản phẩm đã cập nhật
+<span class="cstat-no" title="statement not covered" >  res.status(200).json({</span>
+    success: true,
+    product,
+  });
+});
 &nbsp;
-      .purchase_total--label {
-        padding: 0 15px 0 0;
-      }
+//------------------------------------------------------------------------------------
 &nbsp;
-      body {
-        background-color: #f2f4f6;
-        color: #51545e;
-      }
+// Kiểm tra xem người dùng có thể đánh giá sản phẩm không  =&gt;  /api/can_review
+export const canUserReview = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
+  // Tìm tất cả các đơn hàng của người dùng đó chứa sản phẩm có ID trùng với ID được truyền
+  const orders = <span class="cstat-no" title="statement not covered" >await Order.find({</span>
+    user: req.user._id,
+    "orderItems.product": req.query.productId,
+    orderStatus: "Delivered"
+  });
 &nbsp;
-      p {
-        color: #51545e;
-      }
+  // Kiểm tra xem người dùng đã mua sản phẩm này chưa
+<span class="cstat-no" title="statement not covered" >  if (orders.length === 0) {</span>
+    // Nếu không có đơn hàng nào chứa sản phẩm này, trả về false với mã trạng thái 200
+<span class="cstat-no" title="statement not covered" >    return res.status(200).json({ canReview: false });</span>
+  }
 &nbsp;
-      .email-wrapper {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        -premailer-width: 100%;
-        -premailer-cellpadding: 0;
-        -premailer-cellspacing: 0;
-        background-color: #f2f4f6;
-      }
+  // Nếu có đơn hàng chứa sản phẩm này, trả về true với mã trạng thái 200
+<span class="cstat-no" title="statement not covered" >  res.status(200).json({</span>
+    canReview: true,
+  });
+});
 &nbsp;
-      .email-content {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        -premailer-width: 100%;
-        -premailer-cellpadding: 0;
-        -premailer-cellspacing: 0;
-      }
 &nbsp;
-      .email-masthead {
-        padding: 25px 0;
-        text-align: center;
-      }
 &nbsp;
-      .email-masthead_logo {
-        width: 94px;
-      }
+// export const canUserReview = catchAsyncErrors(async (req, res) =&gt; {
+//   try {
+//     // Kiểm tra xem productId có được cung cấp hay không
+//     const productId = req.query.productId;
+//     if (!productId) {
+//       return res.status(400).json({ message: "Product ID is required" });
+//     }
 &nbsp;
-      .email-masthead_name {
-        font-size: 16px;
-        font-weight: bold;
-        color: #a8aaaf;
-        text-decoration: none;
-        text-shadow: 0 1px 0 white;
-      }
+//     // Tìm tất cả các đơn hàng của người dùng đó chứa sản phẩm có ID trùng với ID được truyền
+//     const orders = await Order.find({
+//       user: req.user._id,
+//       "orderItems.product": productId,
+//       orderStatus: "Delivered"
+//     });
 &nbsp;
-      .email-body {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        -premailer-width: 100%;
-        -premailer-cellpadding: 0;
-        -premailer-cellspacing: 0;
-      }
+//     // Kiểm tra xem người dùng đã mua và nhận sản phẩm này chưa
+//     if (orders.length === 0) {
+//       // Nếu không có đơn hàng nào chứa sản phẩm này hoặc chưa giao hàng, trả về false với mã trạng thái 200
+//       return res.status(200).json({ canReview: false });
+//     }
 &nbsp;
-      .email-body_inner {
-        width: 570px;
-        margin: 0 auto;
-        padding: 0;
-        -premailer-width: 570px;
-        -premailer-cellpadding: 0;
-        -premailer-cellspacing: 0;
-        background-color: #ffffff;
-      }
+//     // Nếu có đơn hàng chứa sản phẩm này và đã giao hàng, trả về true với mã trạng thái 200
+//     res.status(200).json({ canReview: true });
 &nbsp;
-      .email-footer {
-        width: 570px;
-        margin: 0 auto;
-        padding: 0;
-        -premailer-width: 570px;
-        -premailer-cellpadding: 0;
-        -premailer-cellspacing: 0;
-        text-align: center;
-      }
-&nbsp;
-      .email-footer p {
-        color: #a8aaaf;
-      }
-&nbsp;
-      .body-action {
-        width: 100%;
-        margin: 30px auto;
-        padding: 0;
-        -premailer-width: 100%;
-        -premailer-cellpadding: 0;
-        -premailer-cellspacing: 0;
-        text-align: center;
-      }
-&nbsp;
-      .body-sub {
-        margin-top: 25px;
-        padding-top: 25px;
-        border-top: 1px solid #eaeaec;
-      }
-&nbsp;
-      .content-cell {
-        padding: 45px;
-      }
-&nbsp;
-      @media only screen and (max-width: 600px) {
-        .email-body_inner,
-        .email-footer {
-          width: 100% !important;
-        }
-      }
-&nbsp;
-      @media (prefers-color-scheme: dark) {
-        body,
-        .email-body,
-        .email-body_inner,
-        .email-content,
-        .email-wrapper,
-        .email-masthead,
-        .email-footer {
-          background-color: #333333 !important;
-          color: #fff !important;
-        }
-        p,
-        ul,
-        ol,
-        blockquote,
-        h1,
-        h2,
-        h3,
-        span,
-        .purchase_item {
-          color: #fff !important;
-        }
-        .attributes_content,
-        .discount {
-          background-color: #222 !important;
-        }
-        .email-masthead_name {
-          text-shadow: none !important;
-        }
-      }
-&nbsp;
-      :root {
-        color-scheme: light dark;
-        supported-color-schemes: light dark;
-      }
-    &lt;/style&gt;
-    &lt;!--[if mso]&gt;
-      &lt;style type="text/css"&gt;
-        .f-fallback {
-          font-family: Arial, sans-serif;
-        }
-      &lt;/style&gt;
-    &lt;![endif]--&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;span class="preheader"
-      &gt;Sử dụng liên kết này để đặt lại mật khẩu của bạn. Link chỉ có hiệu lực trong 30 phút.&lt;/span
-    &gt;
-    &lt;table
-      class="email-wrapper"
-      width="100%"
-      cellpadding="0"
-      cellspacing="0"
-      role="presentation"
-    &gt;
-      &lt;tr&gt;
-        &lt;td align="center"&gt;
-          &lt;table
-            class="email-content"
-            width="100%"
-            cellpadding="0"
-            cellspacing="0"
-            role="presentation"
-          &gt;
-            &lt;tr&gt;
-              &lt;td class="email-masthead"&gt;
-                &lt;a
-                  href="https://fashionshop.com"
-                  class="f-fallback email-masthead_name"
-                &gt;
-                fashionshop
-                &lt;/a&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;
-&nbsp;
-            &lt;tr&gt;
-              &lt;td
-                class="email-body"
-                width="570"
-                cellpadding="0"
-                cellspacing="0"
-              &gt;
-                &lt;table
-                  class="email-body_inner"
-                  align="center"
-                  width="570"
-                  cellpadding="0"
-                  cellspacing="0"
-                  role="presentation"
-                &gt;
-                  &lt;tr&gt;
-                    &lt;td class="content-cell"&gt;
-                      &lt;div class="f-fallback"&gt;
-                        &lt;h1&gt;Hi ${username},&lt;/h1&gt;
-                        &lt;p&gt;
-                        Gần đây bạn đã yêu cầu đặt lại mật khẩu cho tài khoản FashionShop của mình. 
-                        Sử dụng nút bên dưới để thiết lập lại nó. 
-                        
-                          &lt;strong
-                            &gt;Việc đặt lại mật khẩu này chỉ có hiệu lực trong 30 phút tiếp theo.
-                            &lt;/strong
-                          &gt;
-                        &lt;/p&gt;
-&nbsp;
-                        &lt;table
-                          class="body-action"
-                          align="center"
-                          width="100%"
-                          cellpadding="0"
-                          cellspacing="0"
-                          role="presentation"
-                        &gt;
-                          &lt;tr&gt;
-                            &lt;td align="center"&gt;
-                              &lt;table
-                                width="100%"
-                                border="0"
-                                cellspacing="0"
-                                cellpadding="0"
-                                role="presentation"
-                              &gt;
-                                &lt;tr&gt;
-                                  &lt;td align="center"&gt;
-                                    &lt;a
-                                      href="${resetUrl}"
-                                      class="f-fallback button button--green"
-                                      target="_blank"
-                                      &gt;Đặt lại mật khẩu của bạn&lt;/a
-                                    &gt;
-                                  &lt;/td&gt;
-                                &lt;/tr&gt;
-                              &lt;/table&gt;
-                            &lt;/td&gt;
-                          &lt;/tr&gt;
-                        &lt;/table&gt;
-                        &lt;p&gt;
-                        Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này hoặc  
-                          &lt;a href="{{support_url}}"&gt;liên hệ với bộ phận hỗ trợ&lt;/a&gt; 
-                          nếu bạn có thắc mắc.
-                        &lt;/p&gt;
-                        &lt;p&gt;Thanks, &lt;br /&gt;The FashionShop team&lt;/p&gt;
-&nbsp;
-                        &lt;table class="body-sub" role="presentation"&gt;
-                          &lt;tr&gt;
-                            &lt;td&gt;
-                              &lt;p class="f-fallback sub"&gt;
-                              Nếu bạn gặp sự cố với nút ở trên, 
-                              hãy sao chép và dán URL bên dưới vào trình duyệt web của bạn.
-                              &lt;/p&gt;
-                              &lt;p class="f-fallback sub"&gt;
-                                &lt;a href="${resetUrl}"&gt;${resetUrl}&lt;/a&gt;
-                              &lt;/p&gt;
-                            &lt;/td&gt;
-                          &lt;/tr&gt;
-                        &lt;/table&gt;
-                      &lt;/div&gt;
-                    &lt;/td&gt;
-                  &lt;/tr&gt;
-                &lt;/table&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-              &lt;td&gt;
-                &lt;table
-                  class="email-footer"
-                  align="center"
-                  width="570"
-                  cellpadding="0"
-                  cellspacing="0"
-                  role="presentation"
-                &gt;
-                  &lt;tr&gt;
-                    &lt;td class="content-cell" align="center"&gt;
-                      &lt;p class="f-fallback sub align-center"&gt;
-                      fashionshop
-                        &lt;br /&gt;1234 Street Rd. &lt;br /&gt;Suite 1234
-                      &lt;/p&gt;
-                    &lt;/td&gt;
-                  &lt;/tr&gt;
-                &lt;/table&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;
-          &lt;/table&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/table&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-`;</pre></td></tr></table></pre>
+//   } catch (error) {
+//     // Bắt và trả về lỗi nếu có
+//     res.status(500).json({ message: error.message });
+//   }
+// });</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-12-12T16:01:01.012Z
+                at 2024-12-12T08:33:10.246Z
             </div>
-        <script src="../../prettify.js"></script>
+        <script src="../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../../sorter.js"></script>
-        <script src="../../block-navigation.js"></script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
     </body>
 </html>
     
