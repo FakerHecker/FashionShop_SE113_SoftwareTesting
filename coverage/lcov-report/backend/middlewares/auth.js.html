@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">22.22% </span>
+                <span class="strong">88.88% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>4/18</span>
+                <span class='fraction'>16/18</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">22.22% </span>
+                <span class="strong">88.88% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/18</span>
+                <span class='fraction'>16/18</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -121,47 +121,47 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">16x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -173,15 +173,15 @@ import User from "../models/user.js";
 import jwt from "jsonwebtoken";
 &nbsp;
 // Kiểm tra xem có phải thành viên không
-export const isAuthenticatedUser = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
-  const { token } = <span class="cstat-no" title="statement not covered" >req.cookies;</span>
+export const isAuthenticatedUser = catchAsyncErrors(async (req, res, next) =&gt; {
+  const { token } = req.cookies;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (!token) {</span>
-<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("Vui lòng đăng nhập để tiếp tục", 401));</span>
+  if (!token) {
+    return next(new ErrorHandler("Vui lòng đăng nhập để tiếp tục", 401));
   }
 &nbsp;
   // Giải mã token để lấy thông tin người dùng
-  const decoded = <span class="cstat-no" title="statement not covered" >jwt.verify(token, process.env.JWT_SECRET);</span>
+  const decoded = jwt.verify(token, process.env.JWT_SECRET);
 <span class="cstat-no" title="statement not covered" >  req.user = await User.findById(decoded.id);</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >  next();</span>
@@ -189,10 +189,10 @@ export const isAuthenticatedUser = catchAsyncErrors(<span class="fstat-no" title
 &nbsp;
 // Xác thực quyền truy cập của người dùng
 export const authorizeRoles = (...roles) =&gt; {
-  return <span class="fstat-no" title="function not covered" >(r</span>eq, res, next) =&gt; {
+  return (req, res, next) =&gt; {
     // Kiểm tra xem vai trò của người dùng có phù hợp không
-<span class="cstat-no" title="statement not covered" >    if (!roles.includes(req.user.role)) {</span>
-<span class="cstat-no" title="statement not covered" >      return next(</span>
+    if (!roles.includes(req.user.role)) {
+      return next(
         new ErrorHandler(
           `Quyền (${req.user.role}) Không được truy cập tính năng này`,
           403
@@ -200,20 +200,20 @@ export const authorizeRoles = (...roles) =&gt; {
       );
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    next();</span>
+    next();
   };
 };
 &nbsp;
 // Kiểm tra xem có phải đến từ đúng server hay không  -&gt; dùng cho các api callback từ server dịch vụ
-export const isAuthenticatedServer = catchAsyncErrors(<span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
-  const allowedOrigin = <span class="cstat-no" title="statement not covered" >'';</span>
+export const isAuthenticatedServer = catchAsyncErrors(async (req, res, next) =&gt; {
+  const allowedOrigin = '';
 &nbsp;
-  const requestOrigin = <span class="cstat-no" title="statement not covered" >req.headers.origin;</span>
+  const requestOrigin = req.headers.origin;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (requestOrigin === allowedOrigin)</span>
-<span class="cstat-no" title="statement not covered" >    next();</span>
+  if (requestOrigin === allowedOrigin)
+    next();
   else
-<span class="cstat-no" title="statement not covered" >    return next(</span>
+    return next(
       new ErrorHandler(
         `Server (${req.headers.origin}) không được truy cập tính năng này`,
         403
@@ -226,7 +226,7 @@ export const isAuthenticatedServer = catchAsyncErrors(<span class="fstat-no" tit
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-12-12T16:01:01.012Z
+                at 2024-12-12T18:44:13.294Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

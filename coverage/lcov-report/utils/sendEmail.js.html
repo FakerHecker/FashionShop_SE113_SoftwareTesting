@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for backend/middlewares/errors.js</title>
+    <title>Code coverage report for utils/sendEmail.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../prettify.css" />
-    <link rel="stylesheet" href="../../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../sort-arrow-sprite.png);
+            background-image: url(../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">backend/middlewares</a> errors.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">utils</a> sendEmail.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">11.11% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>21/21</span>
+                <span class='fraction'>1/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>18/18</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">11.11% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>20/20</span>
+                <span class='fraction'>1/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -127,12 +127,7 @@
 <a name='L62'></a><a href='#L62'>62</a>
 <a name='L63'></a><a href='#L63'>63</a>
 <a name='L64'></a><a href='#L64'>64</a>
-<a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a>
-<a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a>
-<a name='L69'></a><a href='#L69'>69</a>
-<a name='L70'></a><a href='#L70'>70</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L65'></a><a href='#L65'>65</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -141,152 +136,142 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
-/**
- *  Đây là một middleware xử lý lỗi. Nó nhận vào các tham số err, req, res, và next.
-    Nếu err không tồn tại, nó sẽ sử dụng một mã trạng thái mặc định là 500 (Lỗi máy chủ nội bộ) và một thông báo mặc định là "Lỗi máy chủ nội bộ".
-    Nếu err tồn tại, nó sẽ sử dụng statusCode và message từ lỗi đó.
-    Sau đó, nó sẽ gửi một phản hồi JSON chứa thông báo lỗi và mã trạng thái tương ứng về cho client.
- */
-  import ErrorHandler from "../utils/errorHandler.js";
-  export default (err,req, res, next) =&gt; {
-    let error = {
-        statusCode: err?.statusCode || 500,
-        message: err?.message || "Lỗi máy chủ nội bộ",
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"> import nodemailer from 'nodemailer';
+// // Hàm gửi email
+// const sendEmail = async (options) =&gt; {
+//   const transport = nodemailer.createTransport({
+//     //host: process.env.SMTP_HOST,// Địa chỉ host SMTP
+//     host: process.env.SMTP_GMAIL,// Địa chỉ host SMTP
+//     port: process.env.SMTP_PORT_GMAIL,// Cổng SMTP
+//     //port: process.env.SMTP_PORT,// Cổng SMTP
+//     auth: {
+//       // user: process.env.SMTP_EMAIL,// Tài khoản email
+//       // pass: process.env.SMTP_PASSWORD,// Mật khẩu email
+//       user: process.env.EMAIL_NAME,// Tài khoản email
+//       pass: process.env.EMAIL_APP_PASSWORD,// Mật khẩu email
+//     },
+//   });
+// // Định dạng nội dung email
+//   const message = {
+//     // Tên người gửi và địa chỉ email người gửi
+//     //from: `${process.env.SMTP_FROM_NAME} &lt;${process.env.SMTP_FROM_EMAIL}&gt;`,
+//     from: `${process.env.SMTP_FROM_NAME} &lt;${process.env.SMTP_FROM_EMAIL}&gt;`,
+//     to: options.email, // Địa chỉ email người nhận
+//     subject: options.subject, // Chủ đề của email
+//     html: options.message, // Nội dung HTML của email
+//   };
+// // Gửi email
+//   await transport.sendMail(message);
+// };
+&nbsp;
+// export default sendEmail;
+&nbsp;
+&nbsp;
+&nbsp;
+const sendEmail = <span class="fstat-no" title="function not covered" >as</span>ync (options) =&gt; {
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    const transport = <span class="cstat-no" title="statement not covered" >nodemailer.createTransport({</span>
+      host: process.env.SMTP_GMAIL,
+      port: process.env.SMTP_PORT_GMAIL,
+      secure: process.env.SMTP_PORT == 465, // Use true for port 465, false for other ports
+      auth: {
+        user: process.env.EMAIL_NAME,
+        pass: process.env.EMAIL_APP_PASSWORD,
+      },
+      // Additional settings for better logging and debugging
+      logger: true,
+      debug: true,
+    });
+&nbsp;
+    const message = <span class="cstat-no" title="statement not covered" >{</span>
+      from: `${process.env.SMTP_FROM_NAME} &lt;${process.env.SMTP_FROM_EMAIL}&gt;`,
+      to: options.email,
+      subject: options.subject,
+      html: options.message,
     };
-    // Xử lý lỗi ID Mongoose không hợp lệ
-    if (err.name === "CastError") {
-        // Tạo thông báo lỗi cho trường hợp ID không hợp lệ
-        const message = `Không tìm thấy ID hợp lệ: ${err?.path}`;
-        // Tạo lỗi mới với mã trạng thái 404 và thông báo được tạo
-        error = new ErrorHandler(message, 404);
-    }
-  
-  // Xử lý lỗi xác nhận
-    if (err.name === "ValidationError") {
-        // Tạo mảng thông báo lỗi từ các lỗi xác nhận
-        const message = Object.values(err.errors).map((value) =&gt; value.message);
-        // Tạo lỗi mới với mã trạng thái 400 và mảng thông báo được tạo
-        error = new ErrorHandler(message, 400);
-    }
-    
-    // Xử lý lỗi khóa trùng lặp trong Mongoose
-    if (err.code === 11000) {
-        // Tạo thông báo lỗi cho trường hợp khóa trùng lặp
-        const message = `${Object.keys(err.keyValue)} đã nhập trùng lặp.`;
-        // Tạo lỗi mới với mã trạng thái 400 và thông báo được tạo
-        error = new ErrorHandler(message, 400);
-    }
-    
-    // Xử lý lỗi JWT không hợp lệ
-    if (err.name === "JsonWebTokenError") {
-        // Tạo thông báo lỗi cho trường hợp JWT không hợp lệ
-        const message = `Mã JWT không hợp lệ. Thử lại!!!`;
-        // Tạo lỗi mới với mã trạng thái 400 và thông báo được tạo
-        error = new ErrorHandler(message, 400);
-    }  
 &nbsp;
-    // Xử lý lỗi JWT hết hạn
-    if (err.name === "TokenExpiredError") {
-        // Tạo thông báo lỗi cho trường hợp JWT đã hết hạn
-        const message = `Mã JWT đã hết hạn. Thử lại!!!`;
-        // Tạo lỗi mới với mã trạng thái 400 và thông báo được tạo
-        error = new ErrorHandler(message, 400);
-    }
-    // Trả về thông tin chi tiết lỗi trong môi trường phát triển
-    if (process.env.NODE_ENV === "DEVELOPMENT") {
-        res.status(error.statusCode).json({
-            message: error.message,
-            error:err,
-            stack: err?.stack,
-        });
-    }
-    // Trả về thông báo lỗi chung trong môi trường sản xuất
-    if (process.env.NODE_ENV === "PRODUCTION") {
-        res.status(error.statusCode).json({
-            message: error.message,
-        });
-    }
+    const info = <span class="cstat-no" title="statement not covered" >await transport.sendMail(message);</span>
 &nbsp;
-    
+<span class="cstat-no" title="statement not covered" >    console.log(`Email sent: ${info.response}`);</span>
+<span class="cstat-no" title="statement not covered" >    return info;</span>
+  } catch (error) {
+<span class="cstat-no" title="statement not covered" >    console.error(`Error sending email: ${error.message}`);</span>
+<span class="cstat-no" title="statement not covered" >    throw new Error('Email could not be sent');</span>
+  }
 };
-&nbsp;</pre></td></tr></table></pre>
+&nbsp;
+export default sendEmail;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-12-12T18:44:13.294Z
+                at 2024-12-12T18:34:34.430Z
             </div>
-        <script src="../../prettify.js"></script>
+        <script src="../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../../sorter.js"></script>
-        <script src="../../block-navigation.js"></script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
     </body>
 </html>
     
