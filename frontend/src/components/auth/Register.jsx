@@ -81,26 +81,26 @@ const Register = () => {
     if (!user.name) {
       errors.push("Họ tên không được để trống");
     }
-    if (!user.email) {
+    else if (!user.email) {
       errors.push("Email không được để trống");
     } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(user.email)) {
       errors.push("Email không đúng định dạng");
     }
-    if (!user.password) {
+    else if (!user.password) {
       errors.push("Mật khẩu không được để trống");
     }
-    if (!confirmPassword) {
+    else if (!confirmPassword) {
       errors.push("Xác nhận mật khẩu không được để trống");
     }
-    if (user.password !== confirmPassword) {
+    else if (user.password !== confirmPassword) {
       errors.push("Mật khẩu và xác nhận mật khẩu không khớp");
     }
-    if (!user.phone) {
+    else if (!user.phone) {
       errors.push("Số điện thoại không được để trống");
     } else if (!/^\+84\d{9}$/.test(user.phone)) {
       errors.push("Số điện thoại phải có định dạng +84 và 9 số đằng sau");
     }
-    if (!user.address) {
+    else if (!user.address) {
       errors.push("Địa chỉ không được để trống");
     }
 
@@ -110,7 +110,6 @@ const Register = () => {
       return;
     }
     console.log(signUpData)
-    return
     if(validateForm()){
       const signUpData = { ...user };
       register(signUpData);
@@ -173,7 +172,7 @@ const Register = () => {
           <div className="mb-3">
             <label htmlFor="email_field" className="form-label">Email</label>
             <input
-              type="email"
+              type="text"
               id="email_field"
               className="form-control"
               name="email"

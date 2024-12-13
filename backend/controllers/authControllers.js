@@ -41,15 +41,17 @@ export const loginUser = catchAsyncErrors(async (req, res, next) => {
 
     // Kiểm tra xem người dùng có tồn tại không
   if(!user){
-    return next(new ErrorHandler("email hoặc mật khẩu không đúng", 401));
+    return next(new ErrorHandler("Email không tồn tại", 401));
   }
 
+  else {
     // So sánh mật khẩu đã nhập với mật khẩu trong cơ sở dữ liệu
-  const isPassWordMatched = await user.comparePassword(password)
+    const isPassWordMatched = await user.comparePassword(password)
 
     // Kiểm tra xem mật khẩu có khớp không
-  if(!isPassWordMatched){
-    return next(new ErrorHandler("username hoặc mật khẩu không đúng", 401));
+    if(!isPassWordMatched){
+      return next(new ErrorHandler("Mật khẩu không đúng", 401));
+    }
   }
 
     // Gửi mã thông báo (token) nếu đăng nhập thành công
