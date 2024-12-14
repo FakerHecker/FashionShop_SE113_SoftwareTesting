@@ -94,6 +94,7 @@ Project được cài cài đặt tại `D:/FashionShop`:
    * B6: npm start
    * B7: Chọn 'Y' khi có câu "Would you like to run the app on another port instead (Y/n)".
 3. Phải Fetch trước khi edit project để update mới nhất từ git 'main' và tránh không bị lỗi conflict khi commit.
+4. **Khi chạy file Test thì tắt project đi mới chạy được 
 
 ## Quy định chung
 
