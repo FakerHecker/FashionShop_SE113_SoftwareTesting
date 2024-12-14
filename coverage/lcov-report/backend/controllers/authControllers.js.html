@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.88% </span>
+                <span class="strong">91.91% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>88/99</span>
+                <span class='fraction'>91/99</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">71.42% </span>
+                <span class="strong">82.14% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>20/28</span>
+                <span class='fraction'>23/28</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.88% </span>
+                <span class="strong">91.91% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>88/99</span>
+                <span class='fraction'>91/99</span>
             </div>
         
             
@@ -397,7 +397,9 @@
 <a name='L332'></a><a href='#L332'>332</a>
 <a name='L333'></a><a href='#L333'>333</a>
 <a name='L334'></a><a href='#L334'>334</a>
-<a name='L335'></a><a href='#L335'>335</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L335'></a><a href='#L335'>335</a>
+<a name='L336'></a><a href='#L336'>336</a>
+<a name='L337'></a><a href='#L337'>337</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -428,27 +430,29 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">33x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -765,24 +769,26 @@ export const loginUser = catchAsyncErrors(async (req, res, next) =&gt; {
   const {email, password} = req.body;
 &nbsp;
     // Kiểm tra xem email và password có tồn tại không
-  <span class="missing-if-branch" title="if path not taken" >I</span>if(!email || !password){
-<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("Vui lòng nhập email và mật khẩu", 400));</span>
+  if(!email || !password){
+    return next(new ErrorHandler("Vui lòng nhập email và mật khẩu", 400));
   }
 &nbsp;
     // Tìm kiếm người dùng trong cơ sở dữ liệu bằng email
   const user = await User.findOne({email}).select("+password");
 &nbsp;
     // Kiểm tra xem người dùng có tồn tại không
-  <span class="missing-if-branch" title="if path not taken" >I</span>if(!user){
-<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("email hoặc mật khẩu không đúng", 401));</span>
+  if(!user){
+    return next(new ErrorHandler("Email không tồn tại", 401));
   }
 &nbsp;
+  else {
     // So sánh mật khẩu đã nhập với mật khẩu trong cơ sở dữ liệu
-  const isPassWordMatched = await user.comparePassword(password)
+    const isPassWordMatched = await user.comparePassword(password)
 &nbsp;
     // Kiểm tra xem mật khẩu có khớp không
-  <span class="missing-if-branch" title="if path not taken" >I</span>if(!isPassWordMatched){
-<span class="cstat-no" title="statement not covered" >    return next(new ErrorHandler("username hoặc mật khẩu không đúng", 401));</span>
+    if(!isPassWordMatched){
+      return next(new ErrorHandler("Mật khẩu không đúng", 401));
+    }
   }
 &nbsp;
     // Gửi mã thông báo (token) nếu đăng nhập thành công
@@ -1072,7 +1078,7 @@ export const deleteUser = catchAsyncErrors(<span class="fstat-no" title="functio
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-12-12T18:44:13.294Z
+                at 2024-12-13T13:12:46.204Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
