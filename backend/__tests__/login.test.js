@@ -43,7 +43,7 @@ describe('POST /api/login', () => {
   });
 
 
-  it('should return 400 if password is null', async () => {
+  it('should return 400 if password and email is null', async () => {
     req.body = { }; // Thiếu thông tin
     
       // Giả sử User.create không thực hiện được và ném lỗi bất kỳ
@@ -92,7 +92,7 @@ describe('POST /api/login', () => {
   });
 
   it('should return 401 if email is not found', async () => {
-    req.body = { email: "123abyd@gmail.com", password: "123456789" }; // Thiếu thông tin
+    req.body = { email: "fsdfregr@gmail.com", password: "123456789" }; // Thiếu thông tin
     
       // Giả sử User.create không thực hiện được và ném lỗi bất kỳ
       const error = new Error("Email không tồn tại");

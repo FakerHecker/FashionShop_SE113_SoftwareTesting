@@ -73,7 +73,7 @@ const Login = () => {
           <div className="mb-3">
             <label htmlFor="email_field" className="form-label">Email</label>
             <input
-              type="email"
+              type="text"
               id="email_field"
               className="form-control"
               name="email"
