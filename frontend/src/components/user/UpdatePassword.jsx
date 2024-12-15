@@ -30,12 +30,31 @@ const UpdatePassword = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
+<<<<<<< HEAD
    
     if (password.length < 6) {
       toast.error("Mật khẩu phải có ít nhất 6 ký tự");
       return;
     }
     else if (password === oldPassword) {
+=======
+
+    if(!oldPassword)
+    {
+      toast.error("Vui lòng nhập mật khẩu cũ");
+      return;
+    } else if(!password)
+    {
+      toast.error("Vui lòng nhập mật khẩu mới");
+      return;
+    } else if(!confirmPassword)
+    {
+      toast.error("Vui lòng nhập xác nhận mật khẩu mới");
+      return;
+    }
+
+    if (password === oldPassword) {
+>>>>>>> 3a2e11f6d28b833b0da3fd9cf4af5fbb8618fbfd
       toast.error("Mật khẩu mới không được trùng với mật khẩu cũ");
       return;
     }
