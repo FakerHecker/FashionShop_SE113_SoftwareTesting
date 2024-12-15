@@ -31,6 +31,20 @@ const UpdatePassword = () => {
   const submitHandler = (e) => {
     e.preventDefault();
 
+    if(!oldPassword)
+    {
+      toast.error("Vui lòng nhập mật khẩu cũ");
+      return;
+    } else if(!password)
+    {
+      toast.error("Vui lòng nhập mật khẩu mới");
+      return;
+    } else if(!confirmPassword)
+    {
+      toast.error("Vui lòng nhập xác nhận mật khẩu mới");
+      return;
+    }
+
     if (password === oldPassword) {
       toast.error("Mật khẩu mới không được trùng với mật khẩu cũ");
       return;
