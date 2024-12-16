@@ -124,5 +124,6 @@ const UpdatePassword = () => {
     </UserLayout>
   )
 }
+}
 
 export default UpdatePassword
