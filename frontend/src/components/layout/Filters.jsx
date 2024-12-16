@@ -2,6 +2,7 @@
 */
 import React, { useEffect, useState } from "react"
 import { useNavigate, useSearchParams } from "react-router-dom"; 
+import { toast } from "react-hot-toast";
 import { getPriceQueryParams } from "../../helpers/helpers";
 import { PRODUCT_CATEGORIES, PRODUCT_SUBCATEGORIES, PRODUCT_SUBSUBCATEGORIES } from "../../constants/constants";
 
@@ -69,6 +70,10 @@ const Filters = () => {
   // Handle lọc giá lên URL
   const handleButtonClick = (e) => {
     e.preventDefault();
+    if (isNaN(min) || isNaN(max)) {
+      toast.error("Giá trị nhập vào phải là số!");
+      return; // Dừng xử lý nếu giá trị không hợp lệ
+    }
     searchParams = getPriceQueryParams(searchParams, "min", min);
     searchParams = getPriceQueryParams(searchParams, "max", max);
     const path = window.location.pathname + "?" + searchParams.toString();

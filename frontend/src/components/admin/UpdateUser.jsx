@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { toast } from "react-hot-toast";
+import * as reactHotToast from "react-hot-toast";
 import { useNavigate, useParams } from "react-router-dom";
 import MetaData from "../layout/MetaData";
 import AdminLayout from "../layout/AdminLayout";
@@ -35,11 +35,11 @@ const UpdateUser = () => {
     
 
     if (error) {
-      toast.error(error?.data?.message);
+      reactHotToast.toast.error(error?.data?.message);
     }
 
     if (isSuccess) {
-      toast.success("Tài khoản đã cập nhật thành công");
+      reactHotToast.toast.success("Tài khoản đã cập nhật thành công");
       // navigate("admin/users");
     }
   }, [error, isSuccess]);
@@ -64,23 +64,23 @@ const UpdateUser = () => {
     if (!userData.name) {
       errors.push("Họ tên không được để trống");
     }
-    if (!userData.email) {
+    else if (!userData.email) {
       errors.push("Email không được để trống");
     } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(userData.email)) {
       errors.push("Email không đúng định dạng");
     }
-    if (!userData.phone) {
+    else if (!userData.phone) {
       errors.push("Số điện thoại không được để trống");
     } else if (!/^\+84\d{9}$/.test(userData.phone)) {
       errors.push("Số điện thoại phải có định dạng +84 và 9 số đằng sau");
     }
-    if (!userData.address) {
+    else if (!userData.address) {
       errors.push("Địa chỉ không được để trống");
     }
 
     // Nếu có lỗi, hiển thị tất cả qua toast
     if (errors.length > 0) {
-      errors.forEach((error) => toast.error(error));
+      errors.forEach((error) => reactHotToast.toast.error(error));
       return;
     }
 
