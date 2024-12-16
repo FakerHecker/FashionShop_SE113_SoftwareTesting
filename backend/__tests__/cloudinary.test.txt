@@ -1,0 +1,111 @@
+// import { jest } from '@jest/globals';
+// import cloudinary from 'cloudinary';
+// import { upload_file, delete_file } from '../utils/cloudinary';
+
+// // Basic mock structure (without implementations)
+// jest.mock('cloudinary', () => ({
+//   v2: {
+//     config: jest.fn(),
+//     uploader: {
+//       upload: jest.fn(),
+//       destroy: jest.fn(),
+//     },
+//   },
+// }));
+
+// describe('Cloudinary Functions', () => {
+//   beforeEach(() => {
+//     jest.clearAllMocks();
+//     process.env.CLOUDINARY_CLOUD_NAME = 'test_cloud_name';
+//     process.env.CLOUDINARY_API_KEY = 'test_api_key';
+//     process.env.CLOUDINARY_API_SECRET = 'test_api_secret';
+//   });
+
+//   describe('upload_file', () => {
+//     it('should upload a file successfully', async () => {
+//       const mockUploadResult = {
+//         public_id: 'test_public_id',
+//         url: 'test_url',
+//       };
+
+//       // Re-assign upload to a new mock function with a specific implementation
+//       cloudinary.v2.uploader.upload = jest.fn((file, options, callback) => {
+//         callback(null, mockUploadResult);
+//       });
+
+//       const file = 'path/to/test/file.jpg';
+//       const folder = 'test_folder';
+
+//       const result = await upload_file(file, folder);
+
+//       expect(cloudinary.v2.uploader.upload).toHaveBeenCalledWith(
+//         file,
+//         expect.any(Function),
+//         { resource_type: 'auto', folder }
+//       );
+//       expect(result).toEqual(mockUploadResult);
+//     });
+
+//     it('should handle upload error', async () => {
+//       const mockError = new Error('Upload failed');
+
+//       // Re-assign upload to a new mock function with a specific implementation
+//       cloudinary.v2.uploader.upload = jest.fn((file, options, callback) => {
+//         callback(mockError, null);
+//       });
+
+//       const file = 'path/to/test/file.jpg';
+//       const folder = 'test_folder';
+
+//       await expect(upload_file(file, folder)).rejects.toThrow('Upload failed');
+
+//       expect(cloudinary.v2.uploader.upload).toHaveBeenCalledWith(
+//         file,
+//         expect.any(Function),
+//         { resource_type: 'auto', folder }
+//       );
+//     });
+//   });
+
+//   describe('delete_file', () => {
+//     it('should delete a file successfully', async () => {
+//       const mockDeleteResult = { result: 'ok' };
+
+//       // Re-assign destroy to a new mock function with a specific implementation
+//       cloudinary.v2.uploader.destroy = jest.fn(() => Promise.resolve(mockDeleteResult));
+
+//       const file = 'test_public_id';
+
+//       const result = await delete_file(file);
+
+//       expect(cloudinary.v2.uploader.destroy).toHaveBeenCalledWith(file);
+//       expect(result).toBe(true);
+//     });
+
+//     it('should return false if deletion is not successful', async () => {
+//       const mockDeleteResult = { result: 'not found' };
+
+//       // Re-assign destroy to a new mock function with a specific implementation
+//       cloudinary.v2.uploader.destroy = jest.fn(() => Promise.resolve(mockDeleteResult));
+
+//       const file = 'test_public_id';
+
+//       const result = await delete_file(file);
+
+//       expect(cloudinary.v2.uploader.destroy).toHaveBeenCalledWith(file);
+//       expect(result).toBeUndefined();
+//     });
+
+//     it('should handle deletion error', async () => {
+//       const mockError = new Error('Deletion failed');
+
+//       // Re-assign destroy to a new mock function with a specific implementation
+//       cloudinary.v2.uploader.destroy = jest.fn().mockImplementationOnce(() => Promise.reject(mockError));
+
+//       const file = 'test_public_id';
+
+//       await expect(delete_file(file)).rejects.toThrow('Deletion failed');
+//       expect(cloudinary.v2.uploader.destroy).toHaveBeenCalledWith(file);
+//     });
+//   });
+// });

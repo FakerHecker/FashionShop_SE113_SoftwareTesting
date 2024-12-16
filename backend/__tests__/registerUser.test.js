@@ -132,7 +132,7 @@ test("should return an error if required fields are missing", async () => {
 });
 
 test("should return an error if required fields are missing", async () => {
-  req.body = { address: "123 Main St" }; // Thiếu thông tin
+  req.body = {  }; // Thiếu thông tin
 
   // Giả sử User.create không thực hiện được và ném lỗi bất kỳ
   const error = new Error("Vui lòng cung cấp đầy đủ thông tin");
@@ -178,7 +178,7 @@ test("should return an error if user inputs password small than 6 digits", async
 
   req.body = userData;
 
-  const error = new Error("Database error");
+  const error = new Error("Mật khẩu phải có ít nhất 6 ký tự");
   jest.spyOn(User, "create").mockRejectedValue(error);
 
   await registerUser(req, res, next);
@@ -208,3 +208,26 @@ test("should return an error if user input name more then 50 digits", async () =
   // Kiểm tra xem next có được gọi với lỗi không
   expect(next).toHaveBeenCalledWith(error);
 });
+
+test("should return an error if phone user is not have 9 digit", async () => {
+  const userData = {
+    name: "JohnDoe",
+    email: "johndoe@example.com",
+    password: "password123",
+    phone: "12345678",
+    address: "123 Main St",
+  };
+
+  req.body = userData;
+
+  // Mock User.create ném lỗi
+  const error = new Error("Số điện thoại phải có định dạng +84 và 9 số đằng sau");
+  jest.spyOn(User, "create").mockRejectedValue(error);
+
+  // Gọi hàm registerUser và kiểm tra xem next có được gọi với lỗi không
+  await registerUser(req, res, next);
+
+  // Kiểm tra xem next có được gọi với lỗi không
+  expect(next).toHaveBeenCalledWith(error);
+});
+

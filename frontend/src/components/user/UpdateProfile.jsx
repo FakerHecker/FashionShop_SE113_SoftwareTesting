@@ -59,17 +59,17 @@ const UpdateProfile = () => {
     if (!userData.name) {
       errors.push("Họ tên không được để trống");
     }
-    if (!userData.email) {
+    else if (!userData.email) {
       errors.push("Email không được để trống");
     } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(userData.email)) {
       errors.push("Email không đúng định dạng");
     }
-    if (!userData.phone) {
+    else if (!userData.phone) {
       errors.push("Số điện thoại không được để trống");
     } else if (!/^\+84\d{9}$/.test(userData.phone)) {
       errors.push("Số điện thoại phải có định dạng +84 và 9 số đằng sau");
     }
-    if (!userData.address) {
+    else if (!userData.address) {
       errors.push("Địa chỉ không được để trống");
     }
 
