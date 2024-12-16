@@ -184,6 +184,14 @@ const Cart = () => {
   };
   // setIsCheckedAll(!isCheckedAll); // Đảo ngược trạng thái khi click
 
+  const { isAuthenticated } = useSelector((state) => state.auth);
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      navigate('/login');
+    }
+  }, [isAuthenticated, navigate]);
+
   return (
     <>
       <MetaData title={"Giỏ Hàng"} />
